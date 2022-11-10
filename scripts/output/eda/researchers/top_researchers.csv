@@ -1,0 +1,52 @@
+De Choudhury stats:
+
+count     13.000000
+mean      68.269231
+std       16.129670
+min       46.875000
+25%       59.375000
+50%       65.625000
+75%       78.125000
+max      100.000000
+Name: %_of_idealized, dtype: float64
+
+
+Drezde stats:
+
+count     7.000000
+mean     68.750000
+std      10.673907
+min      50.000000
+25%      64.062500
+50%      68.750000
+75%      76.562500
+max      81.250000
+Name: %_of_idealized, dtype: float64
+
+
+Coppersmith stats:
+
+count    10.000000
+mean     70.312500
+std      10.442676
+min      50.000000
+25%      63.281250
+50%      71.875000
+75%      77.343750
+max      84.375000
+Name: %_of_idealized, dtype: float64
+
+
+Other author stats:
+
+count    28.000000
+mean     62.053571
+std      13.467056
+min      34.375000
+25%      52.343750
+50%      62.500000
+75%      71.875000
+max      84.375000
+Name: %_of_idealized, dtype: float64
+
+

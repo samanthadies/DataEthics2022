@@ -1,0 +1,330 @@
+Run 1
+
+Cluster  0:
+ post
+ user
+ comment
+ subreddits
+ community
+ condition
+ data
+ sw
+ reddit
+ journal
+Cluster  1:
+ user
+ tweet
+ twitter
+ participant
+ depression
+ wa
+ word
+ data
+ sample
+ country
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: -1
+Score 1 accuracy: 0.5
+
+__________________________________________________
+
+Run 2
+
+Cluster  0:
+ participant
+ tweet
+ twitter
+ depression
+ user
+ wa
+ questionnaire
+ word
+ collected
+ score
+Cluster  1:
+ post
+ user
+ data
+ comment
+ community
+ subreddits
+ condition
+ mental
+ health
+ selfdisclosure
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: -1
+Score 1 accuracy: 0.7692307692307693
+
+__________________________________________________
+
+Run 3
+
+Cluster  0:
+ post
+ user
+ comment
+ subreddits
+ data
+ selfdisclosure
+ mental
+ sw
+ reddit
+ journal
+Cluster  1:
+ tweet
+ participant
+ user
+ twitter
+ depression
+ wa
+ condition
+ survey
+ data
+ community
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: -1
+Score 1 accuracy: 0.5384615384615384
+
+__________________________________________________
+
+Run 4
+
+Cluster  0:
+ post
+ selfdisclosure
+ user
+ data
+ reddit
+ comment
+ university
+ subreddit
+ subreddits
+ word
+Cluster  1:
+ user
+ tweet
+ participant
+ post
+ twitter
+ depression
+ wa
+ data
+ condition
+ community
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: -1
+Score 1 accuracy: 0.7692307692307693
+
+__________________________________________________
+
+Run 5
+
+Cluster  0:
+ post
+ user
+ comment
+ subreddits
+ community
+ data
+ selfdisclosure
+ mental
+ word
+ sw
+Cluster  1:
+ tweet
+ participant
+ user
+ twitter
+ depression
+ condition
+ wa
+ data
+ history
+ ptsd
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: -1
+Score 1 accuracy: 0.6153846153846154
+
+__________________________________________________
+
+Run 6
+
+Cluster  0:
+ participant
+ tweet
+ depression
+ twitter
+ user
+ survey
+ wa
+ ptsd
+ questionnaire
+ history
+Cluster  1:
+ post
+ user
+ data
+ comment
+ subreddits
+ community
+ condition
+ mental
+ selfdisclosure
+ health
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: -1
+Score 1 accuracy: 0.6153846153846154
+
+__________________________________________________
+
+Run 7
+
+Cluster  0:
+ tweet
+ word
+ user
+ twitter
+ wa
+ model
+ total
+ wa interquartile
+ wa interquartile range
+ interquartile range
+Cluster  1:
+ post
+ user
+ participant
+ data
+ comment
+ depression
+ twitter
+ community
+ subreddits
+ condition
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: -1
+Score 1 accuracy: 0.8076923076923077
+
+__________________________________________________
+
+Run 8
+
+Cluster  0:
+ post
+ user
+ tweet
+ data
+ condition
+ word
+ subreddits
+ comment
+ twitter
+ mental
+Cluster  1:
+ participant
+ depression
+ survey
+ user
+ wa
+ sw
+ community
+ data
+ history
+ twitter
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: -1
+Score 1 accuracy: 0.6923076923076923
+
+__________________________________________________
+
+Run 9
+
+Cluster  0:
+ post
+ user
+ tweet
+ participant
+ twitter
+ data
+ depression
+ community
+ condition
+ wa
+Cluster  1:
+ user
+ sw
+ post
+ weibo
+ mh
+ survey
+ suicide
+ data
+ mhs
+ respondent
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: -1
+Score 1 accuracy: 0.8461538461538461
+
+__________________________________________________
+
+Run 10
+
+Cluster  0:
+ user
+ post
+ tweet
+ data
+ twitter
+ condition
+ word
+ comment
+ community
+ wa
+Cluster  1:
+ participant
+ post
+ selfdisclosure
+ depression
+ history
+ university
+ questionnaire
+ data
+ student
+ score
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: -1
+Score 1 accuracy: 0.7692307692307693
+
+__________________________________________________
+

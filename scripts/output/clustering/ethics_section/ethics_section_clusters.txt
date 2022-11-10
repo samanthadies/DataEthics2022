@@ -1,0 +1,330 @@
+Run 1
+
+Cluster  0:
+ health
+ selfdisclosure
+ visual
+ social
+ mental
+ data
+ rq
+ mental health
+ social support
+ work
+Cluster  1:
+ depression
+ data
+ difference
+ feature
+ analysis
+ classification
+ marker
+ gender
+ result
+ method
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.5
+Score 1 accuracy: 0.75
+
+__________________________________________________
+
+Run 2
+
+Cluster  0:
+ depression
+ analysis
+ marker
+ data
+ topic
+ word
+ visual
+ theme
+ method
+ classification
+Cluster  1:
+ data
+ gender
+ health
+ social
+ selfdisclosure
+ mental
+ difference
+ feature
+ discussion
+ user
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.5
+Score 1 accuracy: 0.5833333333333334
+
+__________________________________________________
+
+Run 3
+
+Cluster  0:
+ health
+ difference
+ depression
+ mental
+ social
+ data
+ mental health
+ selfdisclosure
+ analysis
+ gender
+Cluster  1:
+ feature
+ classification
+ data
+ analysis
+ word
+ feature extraction
+ extraction
+ marker
+ machine
+ method data
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.7142857142857143
+Score 1 accuracy: 0.4166666666666667
+
+__________________________________________________
+
+Run 4
+
+Cluster  0:
+ data
+ feature
+ classification
+ analysis
+ selfdisclosure
+ visual
+ social
+ model
+ abstract introduction
+ abstract
+Cluster  1:
+ depression
+ difference
+ mental
+ mental health
+ health
+ gender
+ data
+ expression
+ marker
+ result
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.5714285714285714
+Score 1 accuracy: 0.5
+
+__________________________________________________
+
+Run 5
+
+Cluster  0:
+ difference
+ health
+ data
+ social
+ mental
+ selfdisclosure
+ mental health
+ expression
+ marker
+ social medium
+Cluster  1:
+ feature
+ depression
+ classification
+ analysis
+ data
+ word
+ discussion
+ abstract
+ user
+ abstract introduction
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.5
+Score 1 accuracy: 0.5833333333333334
+
+__________________________________________________
+
+Run 6
+
+Cluster  0:
+ depression
+ feature
+ word
+ discussion
+ topic
+ user
+ data
+ related
+ analysis
+ modeling
+Cluster  1:
+ data
+ health
+ difference
+ social
+ mental
+ analysis
+ classification
+ mental health
+ selfdisclosure
+ gender
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.5
+Score 1 accuracy: 0.75
+
+__________________________________________________
+
+Run 7
+
+Cluster  0:
+ data
+ feature
+ health
+ gender
+ classification
+ analysis
+ social
+ mental
+ medium
+ social medium
+Cluster  1:
+ depression
+ difference
+ support
+ related
+ analysis
+ expression
+ result
+ topic
+ work
+ related work
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.5714285714285714
+Score 1 accuracy: 0.8333333333333334
+
+__________________________________________________
+
+Run 8
+
+Cluster  0:
+ health
+ data
+ social
+ difference
+ mental
+ gender
+ mental health
+ selfdisclosure
+ social medium
+ medium
+Cluster  1:
+ depression
+ marker
+ analysis
+ feature
+ classification
+ word
+ topic
+ data
+ discussion
+ result
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.6428571428571429
+Score 1 accuracy: 0.75
+
+__________________________________________________
+
+Run 9
+
+Cluster  0:
+ health
+ social
+ mental
+ data
+ difference
+ mental health
+ gender
+ depression
+ analysis
+ selfdisclosure
+Cluster  1:
+ classification
+ marker
+ data
+ method data
+ depression
+ method data collection
+ collection
+ data collection
+ analysis
+ study
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.7857142857142857
+Score 1 accuracy: 0.4166666666666667
+
+__________________________________________________
+
+Run 10
+
+Cluster  0:
+ classification
+ data
+ analysis
+ visual
+ difference
+ linguistic
+ social
+ social medium
+ medium
+ machine
+Cluster  1:
+ depression
+ health
+ gender
+ data
+ selfdisclosure
+ mental
+ feature
+ related
+ discussion
+ related work
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.7857142857142857
+Score 1 accuracy: 0.6666666666666666
+
+__________________________________________________
+

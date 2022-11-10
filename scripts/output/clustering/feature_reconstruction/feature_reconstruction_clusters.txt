@@ -1,0 +1,330 @@
+Run 1
+
+Cluster  0:
+ word
+ topic
+ post
+ category
+ used
+ image
+ comment
+ rank
+ user
+ feature
+Cluster  1:
+ tweet
+ user
+ depression
+ data
+ analysis
+ score
+ mental
+ identity
+ mental health
+ feature
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.6363636363636364
+Score 1 accuracy: 0.6666666666666666
+
+__________________________________________________
+
+Run 2
+
+Cluster  0:
+ depression
+ item
+ score
+ ddep
+ klout
+ survey
+ tweet
+ klout score
+ response
+ cesd
+Cluster  1:
+ word
+ user
+ tweet
+ topic
+ post
+ used
+ feature
+ image
+ mental
+ data
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.18181818181818182
+Score 1 accuracy: 0.9333333333333333
+
+__________________________________________________
+
+Run 3
+
+Cluster  0:
+ user
+ image
+ tweet
+ mental
+ post
+ health
+ measure
+ data
+ depression
+ mental health
+Cluster  1:
+ word
+ topic
+ tweet
+ user
+ post
+ used
+ depression
+ journal
+ matrix
+ rmn
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.36363636363636365
+Score 1 accuracy: 0.7333333333333333
+
+__________________________________________________
+
+Run 4
+
+Cluster  0:
+ word
+ topic
+ post
+ comment
+ mental
+ category
+ mental health
+ health
+ celebrity
+ measure
+Cluster  1:
+ tweet
+ user
+ depression
+ image
+ word
+ used
+ feature
+ twitter
+ analysis
+ score
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.6363636363636364
+Score 1 accuracy: 0.4666666666666667
+
+__________________________________________________
+
+Run 5
+
+Cluster  0:
+ word
+ tweet
+ topic
+ user
+ depression
+ feature
+ mental
+ health
+ post
+ used
+Cluster  1:
+ user
+ comment
+ word
+ post
+ data
+ post comment
+ rmn
+ schizophrenic
+ model
+ image
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.36363636363636365
+Score 1 accuracy: 0.8
+
+__________________________________________________
+
+Run 6
+
+Cluster  0:
+ word
+ tweet
+ user
+ depression
+ topic
+ used
+ feature
+ image
+ post
+ wa
+Cluster  1:
+ comment
+ post
+ mental
+ celebrity
+ measure
+ post comment
+ mental health
+ page
+ rmn
+ health
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.8181818181818182
+Score 1 accuracy: 0.2
+
+__________________________________________________
+
+Run 7
+
+Cluster  0:
+ word
+ user
+ tweet
+ topic
+ post
+ used
+ feature
+ mental
+ data
+ category
+Cluster  1:
+ depression
+ image
+ item
+ score
+ ddep
+ klout
+ histogram
+ survey
+ tweet
+ klout score
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.18181818181818182
+Score 1 accuracy: 0.8666666666666667
+
+__________________________________________________
+
+Run 8
+
+Cluster  0:
+ word
+ tweet
+ image
+ topic
+ depression
+ user
+ used
+ journal
+ item
+ category
+Cluster  1:
+ user
+ post
+ word
+ tweet
+ data
+ mental
+ health
+ use
+ mental health
+ analysis
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.8181818181818182
+Score 1 accuracy: 0.3333333333333333
+
+__________________________________________________
+
+Run 9
+
+Cluster  0:
+ word
+ tweet
+ user
+ topic
+ depression
+ post
+ used
+ feature
+ wa
+ data
+Cluster  1:
+ image
+ celebrity
+ measure
+ page
+ post
+ comment
+ wikipedia
+ mental
+ mental health
+ reddit
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.9090909090909091
+Score 1 accuracy: 0.26666666666666666
+
+__________________________________________________
+
+Run 10
+
+Cluster  0:
+ tweet
+ user
+ depression
+ twitter
+ score
+ analysis
+ identity
+ use
+ data
+ rank
+Cluster  1:
+ word
+ topic
+ post
+ image
+ feature
+ category
+ user
+ used
+ mental
+ comment
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.5454545454545454
+Score 1 accuracy: 0.8
+
+__________________________________________________
+

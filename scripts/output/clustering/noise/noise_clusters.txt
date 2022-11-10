@@ -1,0 +1,330 @@
+Run 1
+
+Cluster  0:
+ topic
+ post
+ word
+ selfdisclosure
+ user
+ university
+ sw
+ layer
+ data
+ model
+Cluster  1:
+ user
+ twitter
+ post
+ tweet
+ participant
+ survey
+ data
+ depression
+ comment
+ wa
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.375
+Score 1 accuracy: 0.7
+
+__________________________________________________
+
+Run 2
+
+Cluster  0:
+ tweet
+ participant
+ user
+ depression
+ questionnaire
+ word
+ twitter
+ et
+ et al
+ al
+Cluster  1:
+ user
+ post
+ data
+ topic
+ mental
+ comment
+ survey
+ health
+ twitter
+ subreddits
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.875
+Score 1 accuracy: 0.2
+
+__________________________________________________
+
+Run 3
+
+Cluster  0:
+ user
+ post
+ word
+ topic
+ data
+ mental
+ comment
+ health
+ subreddits
+ reddit
+Cluster  1:
+ tweet
+ participant
+ depression
+ survey
+ score
+ user
+ twitter
+ cesd
+ weibo
+ et al
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.8125
+Score 1 accuracy: 0.4
+
+__________________________________________________
+
+Run 4
+
+Cluster  0:
+ post
+ user
+ comment
+ subreddits
+ reddit
+ data
+ selfdisclosure
+ sw
+ vector
+ survey
+Cluster  1:
+ user
+ tweet
+ twitter
+ depression
+ topic
+ word
+ participant
+ condition
+ wa
+ et
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.5
+Score 1 accuracy: 0.6
+
+__________________________________________________
+
+Run 5
+
+Cluster  0:
+ post
+ topic
+ user
+ comment
+ subreddits
+ word
+ selfdisclosure
+ reddit
+ data
+ sw
+Cluster  1:
+ user
+ tweet
+ twitter
+ participant
+ survey
+ depression
+ score
+ data
+ wa
+ condition
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.5625
+Score 1 accuracy: 0.7
+
+__________________________________________________
+
+Run 6
+
+Cluster  0:
+ participant
+ survey
+ post
+ selfdisclosure
+ score
+ data
+ university
+ cesd
+ twitter
+ respondent
+Cluster  1:
+ user
+ tweet
+ post
+ word
+ topic
+ mental
+ comment
+ twitter
+ data
+ depression
+
+
+
+c0 - present, c1 - absent
+Score 0 accuracy: 0.75
+Score 1 accuracy: 0.4
+
+__________________________________________________
+
+Run 7
+
+Cluster  0:
+ user
+ selfdisclosure
+ vector
+ model
+ post
+ layer
+ tweet
+ training
+ twitter
+ age
+Cluster  1:
+ user
+ post
+ data
+ tweet
+ topic
+ participant
+ comment
+ survey
+ twitter
+ word
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.3125
+Score 1 accuracy: 0.8
+
+__________________________________________________
+
+Run 8
+
+Cluster  0:
+ user
+ tweet
+ post
+ mental
+ selfdisclosure
+ mental health
+ twitter
+ topic
+ health
+ word
+Cluster  1:
+ user
+ post
+ data
+ participant
+ survey
+ score
+ depression
+ word
+ wa
+ twitter
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.4375
+Score 1 accuracy: 0.6
+
+__________________________________________________
+
+Run 9
+
+Cluster  0:
+ user
+ post
+ tweet
+ twitter
+ word
+ data
+ topic
+ comment
+ depression
+ wa
+Cluster  1:
+ survey
+ selfdisclosure
+ weibo
+ mturk
+ post
+ participant
+ score
+ cesd
+ rating
+ cesd score
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.8125
+Score 1 accuracy: 0.2
+
+__________________________________________________
+
+Run 10
+
+Cluster  0:
+ user
+ tweet
+ post
+ word
+ topic
+ mental
+ comment
+ twitter
+ data
+ depression
+Cluster  1:
+ participant
+ survey
+ post
+ selfdisclosure
+ score
+ data
+ university
+ cesd
+ twitter
+ respondent
+
+
+
+c0 - absent, c1 - present
+Score 0 accuracy: 0.75
+Score 1 accuracy: 0.4
+
+__________________________________________________
+
