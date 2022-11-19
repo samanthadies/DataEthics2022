@@ -18,26 +18,13 @@ tqdm.pandas()
 
 OUTPUT_FP = '../data/cleaned/'
 
-ml = ['training', 'training_biased', 'testing']
 
-criteria = ['data source', 'class collection', 'ground truth size', 'ground truth discussion', 'random sample',
-            'dem dist', 'informed consent', 'data public', 'irb', 'limitations', 'anonymity', 'data quality',
-            'missing values', 'ethics section', 'people', 'thesis', 'contributions', 'implications', 'motivation',
-            'generalizability', 'target pop', 'lit - task', 'lit - context', 'hypotheses', 'data availability',
-            'preprocessing', 'var selection', 'var construction', 'var reconstruction', 'list models', 'model steps',
-            'model choice', 'define measures', 'common uses', 'cv', 'hyperparameters', 'attempted models',
-            'code availability', 'infrastructure/packages', 'biases/fairness', 'eval metrics', 'model comparison',
-            'experiment cases', 'fig - explain', 'fig - faithful', 'fig - interpretable', 'takeaways', 'results context',
-            'results implications', 'results use', 'results misuse']
-
-
-########################################################################################################
-# remove_punctuation
-# Inputs: row
-# Return: row
-# Description: removes all non-alhpabetic, non-space characters from the text input
-########################################################################################################
 def remove_punctuation(row):
+    """
+    removes all non-alhpabetic, non-space characters from the text input
+    :param row: row of df to clean
+    :return: cleaned row of df
+    """
 
     # identify characters to keep
     regex = re.compile('[^a-zA-Z ]')
@@ -47,13 +34,12 @@ def remove_punctuation(row):
     return row
 
 
-########################################################################################################
-# remove_extra_spaces
-# Inputs: row
-# Return: row
-# Description: removes all extra white spaces beyond the word delimiters
-########################################################################################################
 def remove_extra_spaces(row):
+    """
+    removes all extra white spaces beyond the word delimiters
+    :param row: row of df to clean
+    :return: cleaned row of df
+    """
 
     # identify the whitespace pattern and remove extra white spaces
     whitespace_pattern = r'\s+'
@@ -63,13 +49,12 @@ def remove_extra_spaces(row):
     return row
 
 
-########################################################################################################
-# lemmatize_text
-# Inputs: row
-# Return: row
-# Description: lemmatizes the input text
-########################################################################################################
 def lemmatize_text(row):
+    """
+    lemmatizes the input text
+    :param row: row of df to clean
+    :return: cleaned row of df
+    """
 
     # lemmatize each word in the row
     row = row.split()
@@ -78,13 +63,12 @@ def lemmatize_text(row):
     return row
 
 
-########################################################################################################
-# clean_text
-# Inputs: row
-# Return: row
-# Description: calls other cleaning methods on the inputted row
-########################################################################################################
 def clean_text(row):
+    """
+    calls other cleaning methods on the inputted row
+    :param row: row of df to clean
+    :return: cleaned row of df
+    """
 
     # remove punctuation
     row = remove_punctuation(row)
@@ -101,13 +85,15 @@ def clean_text(row):
     return row
 
 
-########################################################################################################
-# convert_to_binary
-# Inputs: df
-# Return: df
-# Description: converts the scores into binary, where 0 means absent and 1 means present
-########################################################################################################
 def convert_to_binary(df):
+    """
+    converts the scores into binary, where 0 means absent and 1 means present
+    :param df: df to convert to binary
+    :return: binary df
+    """
+
+    criteria = pd.read_csv('../data/raw/cleaning_criteria.csv')
+    criteria = criteria.columns
 
     # convert scores to binary for ml dfs
     for item in criteria:
@@ -117,13 +103,12 @@ def convert_to_binary(df):
     return df
 
 
-########################################################################################################
-# preprocess_text
-# Inputs: df
-# Return: df['Cleaned']
-# Description: cleans each row of data from the datafram and returns new column for the cleaned text
-########################################################################################################
 def preprocess_text(df):
+    """
+    cleans each row of data from the datafram and returns new column for the cleaned text
+    :param df: dataframe
+    :return: column of dataframe with cleaned text
+    """
 
     # clean the text
     df['text'] = df.progress_apply(lambda x: clean_text(x['text']), axis=1, result_type='expand')
@@ -134,15 +119,16 @@ def preprocess_text(df):
     return df['text']
 
 
-########################################################################################################
-# preprocess
-# Inputs: BASE_FP - starting file path, type - 'criteria' or 'classification' to denote df type
-# Return: N/A
-# Description: reads in files and preprocesses data based on df type
-########################################################################################################
 def preprocess(BASE_FP):
+    """
+    reads in files and preprocesses data based on df type
+    :param BASE_FP: starting file path
+    :return: void
+    """
 
     warnings.filterwarnings('ignore')
+
+    ml = ['training', 'training_biased', 'testing']
 
     # iterate through ml csvs
     for item in ml:
@@ -164,13 +150,11 @@ def preprocess(BASE_FP):
         df['text'].to_csv(f'{ML_FP_WRITE_TEXT}', index=False)
 
 
-########################################################################################################
-# main
-# Inputs: N/A
-# Return: N/A
-# Description: N/A
-########################################################################################################
 def main():
+    """
+
+    :return: void
+    """
 
     print("running textCleaning.py main")
 

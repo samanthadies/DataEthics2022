@@ -1,6 +1,10 @@
 ########################################################################################################
 # ml.py
-#
+# This program runs classification experiments at the section level for each transparency criteria class
+# label. We build models following two model configuration: single-stage and multi-stage. We use four
+# datasets, the baseline (text) data, the topics data (topic distributions), and seed-biased (text with
+# seeds) data. We then identify the best model for each criteria and generate paper level scores using
+# the best models.
 ########################################################################################################
 
 import pandas as pd
@@ -33,45 +37,33 @@ OUTPUT_TOPICS_FP = '../output/classification/topics/'
 OUTPUT_TEXT_FP = '../output/classification/text/'
 OUTPUT_PHASED_FP = '../output/classification/phased/'
 
-CLASS_LABELS = ['random sample', 'dem dist', 'informed consent', 'data public', 'irb', 'limitations', 'anonymity',
-                'data quality', 'missing values', 'ethics section', 'generalizability', 'target pop', 'hypotheses',
-                'data availability', 'preprocessing', 'var selection', 'var construction', 'var reconstruction',
-                'list models', 'model steps', 'model choice', 'define measures', 'common uses', 'cv', 'hyperparameters',
-                'attempted models', 'infrastructure/packages', 'biases/fairness', 'model comparison',
-                'experiment cases', 'results use', 'results misuse']
 
-TOPIC_DIST_COLS = ['topic1', 'topic2', 'topic3', 'topic4', 'topic5', 'topic6', 'topic7', 'topic8', 'topic9', 'topic10',
-                   'topic11', 'topic12', 'topic13', 'topic14', 'topic15', 'topic16', 'topic17', 'topic18', 'topic19',
-                   'topic20', 'topic21', 'topic22', 'topic23', 'topic24', 'topic25', 'topic26', 'topic27', 'topic28',
-                   'topic29', 'topic30', 'topic31', 'topic32', 'topic33', 'topic34', 'topic35']
+def get_train_and_test(training, testing, criteria, class_labels, topic_dist_cols, training_cols):
+    """
+    undersamples and formats training and testing data
+    :param training: training data
+    :param testing: testing data
+    :param criteria: class label
+    :param class_labels: list of all class labels
+    :param topic_dist_cols: list of coluns with topic distributions
+    :param training_cols: list of all columns to use for training
+    :return: X_train - training X set, Y_train - training Y set, X_validate - testing X set, Y_validate - testing X set,
+    X_train_2 - training X set for phase 2, X_validate_2 - testing X set for phase 2
+    """
 
-TRAINING_COLS = ['topic1', 'topic2', 'topic3', 'topic4', 'topic5', 'topic6', 'topic7', 'topic8', 'topic9', 'topic10',
-                 'topic11', 'topic12', 'topic13', 'topic14', 'topic15', 'topic16', 'topic17', 'topic18', 'topic19',
-                 'topic20', 'topic21', 'topic22', 'topic23', 'topic24', 'topic25', 'topic26', 'topic27', 'topic28',
-                 'topic29', 'topic30', 'topic31', 'topic32', 'topic33', 'topic34', 'topic35', 'text']
-
-
-########################################################################################################
-# get_train_and_test
-# Inputs: training - training data, testing - testing data, criteria - class label
-# Return: X_train - training X set, Y_train - training Y set, X_validate - testing X set, Y_validate -
-# testing X set, X_train_2 - training X set for phase 2, X_validate_2 - testing X set for phase 2
-# Description: undersamples and formats training and testing data
-########################################################################################################
-def get_train_and_test(training, testing, criteria):
     count_vect = CountVectorizer()
     tfidf_transformer = TfidfTransformer()
 
     # undersample training data
     undersample = RandomUnderSampler(sampling_strategy='majority')
-    X_equal, Y_equal = undersample.fit_resample(training[TRAINING_COLS], training[criteria])
+    X_equal, Y_equal = undersample.fit_resample(training[training_cols], training[criteria])
 
     # get training data
     X_train = X_equal['text']
     x_train_counts = count_vect.fit_transform(X_train)
     training_vocab = count_vect.vocabulary_
     X_train = tfidf_transformer.fit_transform(x_train_counts)
-    X_train_2 = X_equal[TOPIC_DIST_COLS]
+    X_train_2 = X_equal[topic_dist_cols]
     Y_train = Y_equal
 
     # get testing data
@@ -80,20 +72,23 @@ def get_train_and_test(training, testing, criteria):
     count_vect_2 = CountVectorizer(vocabulary=training_vocab)
     x_train_counts = count_vect_2.fit_transform(X_validate)
     X_validate = tfidf_transformer.fit_transform(x_train_counts)
-    X_validate_2 = testing[TOPIC_DIST_COLS]
-    Y_validate = testing[CLASS_LABELS]
+    X_validate_2 = testing[topic_dist_cols]
+    Y_validate = testing[class_labels]
 
     return X_train, X_validate, Y_train, Y_validate, X_train_2, X_validate_2
 
 
-########################################################################################################
-# get_ROC
-# Inputs: classifier - classifier to generate ROC oof, model_name - name of model, X_validate -
-# testing X set, Y_validate - testing X set, output_fp - output filepath to save ROC figure
-# Return: N/A
-# Description: Generates ROC figure for inputted classfier
-########################################################################################################
 def get_ROC(classifier, model_name, criteria, X_validate, Y_validate, output_fp):
+    """
+    Generates ROC figure for inputted classfier
+    :param classifier: classifier for which to generate ROC
+    :param model_name: name of model
+    :param criteria: class label
+    :param X_validate: testing X set
+    :param Y_validate: ttesting class label
+    :param output_fp: filepath for saving output
+    :return: void
+    """
 
     # plot and save ROC curves
     if model_name != 'NeuralNet':
@@ -108,14 +103,15 @@ def get_ROC(classifier, model_name, criteria, X_validate, Y_validate, output_fp)
         plt.clf()
 
 
-########################################################################################################
-# cross_validation
-# Inputs: model - name of model, X_train - training X set, Y_train - training Y set
-# Return: cv_results - cross_val_score
-# Description: Performs k fold cross validation with the testing set (k=5) for the inputted model.
-# Then, returns out average accuracy and standard deviation.
-########################################################################################################
 def cross_validation(model, X_train, Y_train):
+    """
+    Performs k fold cross validation with the testing set (k=5) for the inputted model. Then, returns out average
+    accuracy and standard deviation.
+    :param model: name of model
+    :param X_train: training X set
+    :param Y_train: training class labels
+    :return: cv_results - cross validation score
+    """
 
     # Sets up parameters for cross validation
     num_folds = 5
@@ -128,17 +124,21 @@ def cross_validation(model, X_train, Y_train):
     return cv_results
 
 
-########################################################################################################
-# get_best_model
-# Inputs:key - model name, model - model, X_train - train X set, Y_train - train Y set, X_validate -
-# test X set, Y_validate - test Y set, file - file, type - experiment
-# type
-# Return: best_model - the best model from grid search, train_predictions - training predictions,
-# test_predictions - testing predictios, f1 - f1 score
-# Description: If SVM or CART, performs grid search. Identifies best model, performs cross validation
-# and holdout, and calculates F1 scores.
-########################################################################################################
 def get_best_model(key, model, X_train, Y_train, X_validate, Y_validate, file, type):
+    """
+    If SVM or CART, performs grid search. Identifies best model, performs cross validation and holdout, and
+    calculates F1 scores.
+    :param key: model name
+    :param model: model
+    :param X_train: train X set
+    :param Y_train: train class labels
+    :param X_validate: test X set
+    :param Y_validate: test class labels
+    :param file: output file
+    :param type: experiment tag
+    :return: best_model - best model from grid search, train_predictions - training predicitons, test_predictions -
+    testing predictions, f1 - f1 score
+    """
 
     # set up grid search
     if key == 'KNN':
@@ -196,17 +196,22 @@ def get_best_model(key, model, X_train, Y_train, X_validate, Y_validate, file, t
     return best_model, train_predictions, test_predictions, f1
 
 
-########################################################################################################
-# run_final_predictive_analytics
-# Inputs: X_t_text - x train text, X_v_text - x validate text, Y_t - y train, Y_v - y validate,
-# X_t_topic - x train topic, X_v_topic - x train topic, models - list of models, type - experiment type,
-# criteria - class label, file - output file
-# Return: Scores - F1 scores from phase 1
-# Description: Performs predictive analytics on the inputted dictionary of models. Specifically, performs
-# cross validation and validaiton on validation dataset, sets up the training data for phase 2, and
-# conducts phase 2.
-########################################################################################################
 def run_final_predictive_analytics(X_t_text, X_v_text, Y_t, Y_v, X_t_topic, X_v_topic, models, type, criteria, file):
+    """
+    Performs predictive analytics on the inputted dictionary of models. Specifically, performs cross validation and
+    validaiton on validation dataset, sets up the training data for phase 2, and conducts phase 2.
+    :param X_t_text: x train text
+    :param X_v_text: x validate text
+    :param Y_t: y train
+    :param Y_v: y validate
+    :param X_t_topic: x train topics
+    :param X_v_topic: x validate topics
+    :param models: list of models
+    :param type: experiment tag
+    :param criteria: class label
+    :param file: output file
+    :return: Scores - f1 scores from phase 1
+    """
 
     train_predictions = {}
     test_predictions = {}
@@ -253,13 +258,11 @@ def run_final_predictive_analytics(X_t_text, X_v_text, Y_t, Y_v, X_t_topic, X_v_
     return scores, test_predictions
 
 
-########################################################################################################
-# get_models
-# Inputs: N/A
-# Return: models - dictionary of all models to test
-# Description: Sets up storage dictionaries for models
-########################################################################################################
 def get_models():
+    """
+    Sets up storage dictionaries for models
+    :return: models - dictionary of all models to test
+    """
 
     # create dictionary of classifiers for modeling
     models = {'NaiveBayes': MultinomialNB(), 'CART': DecisionTreeClassifier(), 'KNN': KNeighborsClassifier(),
@@ -268,14 +271,15 @@ def get_models():
     return models
 
 
-########################################################################################################
-# calc_scores
-# Inputs: criteria - criteria label, top_f1 - dict with best F1 score from each experiment, top_preds -
-# dict with best set of predictions by F1 score from each experiment, preds - df of best predictions
-# Return: N/A
-# Description: isolates the best set of predictions by F1 score for each criteria and adds it to a df
-########################################################################################################
 def calc_scores(criteria, top_f1, top_preds, preds):
+    """
+    isolates the best set of predictions by F1 score for each criteria and adds it to a df
+    :param criteria: criteria label
+    :param top_f1: dict w/ best f1 scores from each experiment
+    :param top_preds: dict with best set of predictions by f1 score for each experiment
+    :param preds: df of best predictions
+    :return: void
+    """
 
     # add a criteria's best predictions to the df of best predictions
     max_key = max(top_f1, key=top_f1.get)
@@ -283,30 +287,29 @@ def calc_scores(criteria, top_f1, top_preds, preds):
     preds[criteria] = list(top_preds.get(max_key))
 
 
-########################################################################################################
-# analyze_preds
-# Inputs: preds - df of best predictions for each criteria by section, test - test dataset
-# Return: N/A
-# Description: groups predicted scores by document
-########################################################################################################
-def analyze_preds(preds, test):
+def analyze_preds(preds, test, class_labels):
+    """
+    groups predicted scores by document
+    :param preds: df of best predictions for each criteria by section
+    :param test: test dataset
+    :param class_labels: list of all class labels
+    :return: void
+    """
 
     # group predictions by document number
     preds['doc_num'] = test['doc_num']
     paper_preds = preds.groupby(by='doc_num').max().reset_index()
-    paper_preds['predicted_score'] = paper_preds[CLASS_LABELS].sum(axis=1) / len(CLASS_LABELS) * 100
+    paper_preds['predicted_score'] = paper_preds[class_labels].sum(axis=1) / len(class_labels) * 100
     paper_preds = paper_preds.drop(columns=['doc_num'])
 
     paper_preds.to_csv(f'{OUTPUT_FP}/predictions/document_predictions.csv', index=False)
 
 
-########################################################################################################
-# get_output_files
-# Inputs: N/A
-# Return: output - dictionary of output files
-# Description: opens output files and creates dictionary for easy access
-########################################################################################################
 def get_output_files():
+    """
+    opens output files and creates dictionary for easy access
+    :return: output - dictionary of output files
+    """
 
     # open output files and create dictionary
     topics_fp = open(f'{OUTPUT_TOPICS_FP}models_performance_section.txt', 'w')
@@ -325,19 +328,30 @@ def get_output_files():
     return output
 
 
-########################################################################################################
-# run_experiments
-# Inputs: criteria - transparency criteria, test - experiment, models - dict of models, output_fp - dict
-# of output files, X_t_text - x train text, X_v_text - x validate text, Y_t - y train, Y_v - y validate,
-# X_t_topics - x train topics, X_v_topics - x validate topics, X_ts_text - x train semi text, X_vs_text -
-# x validate semi text, Y_ts - y train semi, Y_vs - y validate semi, X_ts_topics - x train semi topics,
-# X_vs_topics - x train semi topics
-# Return: N/A
-# Description: runs either the text-only, topics-only, all F1 phased, or best F1 phased classification
-# experiment
-########################################################################################################
 def run_experiments(criteria, test, models, output_fp, X_t_text, X_v_text, Y_t, Y_v, X_t_topics, X_v_topics, X_ts_text,
                     X_vs_text, Y_ts, Y_vs, X_ts_topics, X_vs_topics, top_f1, top_preds):
+    """
+    runs either the text-only, topics-only, all F1 phased, or best F1 phased classification experiment
+    :param criteria: transparency criteria
+    :param test: experiment tag
+    :param models: dict of models
+    :param output_fp: dict of output files
+    :param X_t_text: X train text
+    :param X_v_text: X validate text
+    :param Y_t: y train text
+    :param Y_v: y validate text
+    :param X_t_topics: X train topics
+    :param X_v_topics: X validate topics
+    :param X_ts_text: X train seed-biased
+    :param X_vs_text: X validate seed-biased
+    :param Y_ts: y train seed-biased
+    :param Y_vs: y validate seed-biased
+    :param X_ts_topics: X train seed-biased topics
+    :param X_vs_topics: X validate seed-biased topics
+    :param top_f1: dict of best f1 scores
+    :param top_preds: dict of best predictions
+    :return:
+    """
 
     print('\n\n' + criteria + ', ' + test + '\n')
 
@@ -446,14 +460,15 @@ def run_experiments(criteria, test, models, output_fp, X_t_text, X_v_text, Y_t, 
         top_preds["topic"] = b_pred.get(max_key)
 
 
-########################################################################################################
-# classification
-# Inputs: train_FP - training data, train_semi_FP - seeded training data, test_FP - testing data
-# Return: N/A
-# Description: reads in data and conducts classification experiments with various types of training data
-# for classification based on topic distribution, based on text, and based on both topics and text
-########################################################################################################
 def classification(train_FP, train_semi_FP, test_FP):
+    """
+    reads in data and conducts classification experiments with various types of training data for classification
+    based on topic distribution, based on text, and based on both topics and text
+    :param train_FP: training data
+    :param train_semi_FP: seeded training data
+    :param test_FP: testing data
+    :return: void
+    """
 
     # start time and set seed
     start_time = time.time()
@@ -466,6 +481,13 @@ def classification(train_FP, train_semi_FP, test_FP):
     train_semi = pd.read_csv(train_semi_FP)
     test = pd.read_csv(test_FP)
 
+    labels = pd.read_csv('../data/cleaned/classification/class_labels.csv')
+    class_labels = labels.columns
+    topics = pd.read_csv('../data/cleaned/classification/topic_dist_cols.csv')
+    topic_dist_cols = topics.columns
+    training = pd.read_csv('../data/cleaned/classification/training_cols.csv')
+    training_cols = training.columns
+
     # get dict of models
     models = get_models()
 
@@ -475,14 +497,17 @@ def classification(train_FP, train_semi_FP, test_FP):
     # classify
     tests = ['topic', 'text', 'allF1', 'bestF1']
     preds = pd.DataFrame()
-    for criteria in CLASS_LABELS:
+    for criteria in class_labels:
 
         top_preds = {}
         top_f1 = {}
 
         # Generate training and testing sets
-        X_t_text, X_v_text, Y_t, Y_v, X_t_topics, X_v_topics = get_train_and_test(train, test, criteria)
-        X_ts_text, X_vs_text, Y_ts, Y_vs, X_ts_topics, X_vs_topics = get_train_and_test(train_semi, test, criteria)
+        X_t_text, X_v_text, Y_t, Y_v, X_t_topics, X_v_topics = get_train_and_test(train, test, criteria, class_labels,
+                                                                                  topic_dist_cols, training_cols)
+        X_ts_text, X_vs_text, Y_ts, Y_vs, X_ts_topics, X_vs_topics = get_train_and_test(train_semi, test, criteria,
+                                                                                        class_labels, topic_dist_cols,
+                                                                                        training_cols)
 
         # run experiments for each criteria
         for item in tests:
@@ -491,20 +516,17 @@ def classification(train_FP, train_semi_FP, test_FP):
 
         calc_scores(criteria, top_f1, top_preds, preds)
 
-    print(preds)
-    analyze_preds(preds, test)
+    analyze_preds(preds, test, class_labels)
 
     # print total time
     print("\nTotal Program Time:" + str((time.time() - start_time)) + " seconds ")
 
 
-########################################################################################################
-# main
-# Inputs: N/A
-# Return: N/A
-# Description: N/A
-########################################################################################################
 def main():
+    """
+
+    :return: void
+    """
 
     print('running ml.py main')
 

@@ -21,57 +21,25 @@ BASE_FP_OUTPUT_VISUALIZATIONS = '../output/visualizations/'
 BASE_FP_OUTPUT_PREDICITONS = '../output/classification/predictions/'
 
 
-idealized_columns = ['data_source_i', 'class_collection_i', 'random_sample_i', 'dem_dist_i', 'informed_consent_i',
-                     'data_public_i', 'irb_i', 'ground_truth_size_i', 'ground_truth_discussion_i', 'limitations_i',
-                     'preprocess_anonymity_i', 'preprocess_drop_i', 'preprocess_missing_values_i', 'preprocess_noise_i',
-                     'ethics_section_i', 'people_i', 'thesis_i', 'contributions_i', 'implications_i', 'motivation_i',
-                     'target_pop_i', 'lit_task_i', 'lit_context_i', 'hypothesis_i', 'data_avail_i', 'preprocess_i',
-                     'var_select_i', 'var_construct_i', 'var_reconstruct_i', 'list_models_i', 'model_steps_i',
-                     'model_choice_i', 'define_measures_i', 'common_uses_i', 'cv_i', 'hyperparameters_i',
-                     'attempted_models_i', 'code_avail_i', 'infrastructure_i', 'fairness_i', 'metrics_i', 'comparison_i',
-                     'cases_i', 'fig_explain_i', 'fig_faith_i', 'fig_interpret_i', 'takeaways_i', 'generalizability_i',
-                     'results_context_i', 'results_implications_i', 'results_use_i', 'results_misuse_i',
-                     '%_of_idealized']
-
-cs_columns = ['data_source_cs', 'class_collection_cs', 'random_sample_cs', 'dem_dist_cs', 'irb_cs',
-              'ground_truth_size_cs', 'ground_truth_discussion_cs', 'preprocess_drop_cs', 'limitations_cs', 'people_cs',
-              'thesis_cs', 'contributions_cs', 'implications_cs', 'motivation_cs', 'target_pop_cs', 'lit_task_cs',
-              'lit_context_cs', 'preprocess_cs', 'var_select_cs', 'var_construct_cs', 'var_reconstruct_cs',
-              'list_models_cs', 'model_steps_cs', 'model_choice_cs', 'define_measures_cs', 'cv_cs', 'hyperparameters_cs',
-              'attempted_models_i', 'infrastructure_cs', 'metrics_cs', 'comparison_cs', 'cases_cs', 'fig_explain_cs',
-              'fig_faith_cs', 'fig_interpret_cs', 'takeaways_cs', 'results_context_cs', 'results_implications_cs',
-              'results_use_cs', '%_of_cs']
-
-ph_columns = ['data_source_ph', 'class_collection_ph', 'random_sample_ph', 'dem_dist_ph', 'informed_consent_ph', 'irb_ph',
-              'ground_truth_size_ph', 'ground_truth_discussion_ph', 'limitations_ps', 'people_ph', 'thesis_ph',
-              'contributions_ph', 'implications_ph', 'motivation_ph', 'target_pop_ph', 'lit_task_ph', 'lit_context_ph',
-              'hypothesis_ph', 'var_construct_ph', 'list_models_ph', 'model_steps_ph', 'model_choice_ph',
-              'define_measures_ph', 'common_uses_ph', 'infrastructure_ph', 'metrics_ph', 'fig_explain_ph', 'fig_faith_ph',
-              'fig_interpret_ph', 'takeaways_ph', 'generalizability_ph', 'results_context_ph', 'results_implications_ph',
-              'results_use_ph', '%_of_ph']
-
-researcher_columns = ['Num_Researchers', 'Choudhury', 'Drezde', 'Coppersmith', 'data_source_i', 'class_collection_i',
-                      'random_sample_i', 'dem_dist_i', 'informed_consent_i', 'data_public_i', 'irb_i',
-                      'ground_truth_size_i', 'ground_truth_discussion_i', 'limitations_i', 'preprocess_anonymity_i',
-                      'preprocess_drop_i', 'preprocess_missing_values_i', 'preprocess_noise_i', 'ethics_section_i',
-                      'people_i', 'thesis_i', 'contributions_i', 'implications_i', 'motivation_i', 'target_pop_i',
-                      'lit_task_i', 'lit_context_i', 'hypothesis_i', 'data_avail_i', 'preprocess_i', 'var_select_i',
-                      'var_construct_i', 'var_reconstruct_i', 'list_models_i', 'model_steps_i', 'model_choice_i',
-                      'define_measures_i', 'common_uses_i', 'cv_i', 'hyperparameters_i', 'attempted_models_i',
-                      'code_avail_i', 'infrastructure_i', 'fairness_i', 'metrics_i', 'comparison_i', 'cases_i',
-                      'fig_explain_i', 'fig_faith_i', 'fig_interpret_i', 'takeaways_i', 'generalizability_i',
-                      'results_context_i', 'results_implications_i', 'results_use_i', 'results_misuse_i',
-                      '%_of_idealized']
-
-
-########################################################################################################
-# read
-# Inputs: filename
-# Return: idealized - dataframe 1, cs - dataframe 2, ph - dataframe 3, researchers - dataframe 4
-# Description: reads in provided file, sets maximum score to 100, splits dataframe into four sub-dataframes
-# containing scores for idealized, cs, ph and researcher norms, and returns the sub-dataframes
-########################################################################################################
 def read(filename):
+    """
+    reads in provided file, sets maximum score to 100, splits dataframe into four sub-dataframes containing scores for
+    idealized, cs, ph and researcher norms, and returns the sub-dataframes
+    :param filename: name of file to read
+    :return: idealized - dataframe 1, cs - dataframe 2, ph - dataframe 3, researchers - dataframe 4
+    """
+
+    i_cols = pd.read_csv('../data/raw/eda_idealized.csv')
+    idealized_columns = i_cols.columns
+
+    cs_cols = pd.read_csv('../data/raw/eda_cs.csv')
+    cs_columns = cs_cols.columns
+
+    ph_cols = pd.read_csv('../data/raw/eda_ph.csv')
+    ph_columns = ph_cols.columns
+
+    r_cols = pd.read_csv('../data/raw/eda_researcher.csv')
+    researcher_columns = r_cols.columns
 
     df = pd.read_csv(filename)
     df = df.dropna(subset=idealized_columns)
@@ -95,19 +63,21 @@ def read(filename):
     return idealized, cs, ph, researchers
 
 
-########################################################################################################
-# generate_summary_stats
-# Inputs: idealized - dataframe 1, cs - dataframe 2, ph - dataframe 3, researchers - dataframe 4
-# Return: N/A
-# Description: calculates summary statistics, and writes statistics to output csv's
-########################################################################################################
 def generate_summary_stats(idealized, cs, ph, researchers):
+    """
+    calculates summary statistics, and writes statistics to output csv's
+    :param idealized: dataframe 1
+    :param cs: dataframe 2
+    :param ph: dataframe 3
+    :param researchers: dataframe 4
+    :return: void
+    """
 
     # generate summary stats
-    idealized_stats = summary_stats_by_df(idealized_columns, idealized)
-    cs_stats = summary_stats_by_df(cs_columns, cs)
-    ph_stats = summary_stats_by_df(ph_columns, ph)
-    researcher_stats = summary_stats_by_df(researcher_columns, researchers)
+    idealized_stats = summary_stats_by_df(idealized.columns, idealized)
+    cs_stats = summary_stats_by_df(cs.columns, cs)
+    ph_stats = summary_stats_by_df(ph.columns, ph)
+    researcher_stats = summary_stats_by_df(researchers.columns, researchers)
 
     # output summary stats to csv's
     idealized_stats.to_csv(f'{BASE_FP_OUTPUT_I}idealized_summary_stats.csv', index=False)
@@ -116,13 +86,13 @@ def generate_summary_stats(idealized, cs, ph, researchers):
     researcher_stats.to_csv(f'{BASE_FP_OUTPUT_RESEARCH}researcher_summary_stats.csv', index=False)
 
 
-########################################################################################################
-# summary_stats_by_df
-# Inputs: df - dataframe, columns - columns to get summary stats from
-# Return: dataframe with summary statistics
-# Description: calculates summary statistics about df's columns using pd.describe()
-########################################################################################################
 def summary_stats_by_df(columns, df):
+    """
+    calculates summary statistics about df's columns using pd.describe()
+    :param columns: columns to focus on for summary stats
+    :param df: dataframe
+    :return: dataframe with summary stats
+    """
 
     # create and format dataframe with first column
     first_attribute = columns[0]
@@ -141,13 +111,15 @@ def summary_stats_by_df(columns, df):
     return stats_df_overall
 
 
-########################################################################################################
-# make_visualizations
-# Inputs: idealized - dataframe 1, cs - dataframe 2, ph - dataframe 3, researchers - dataframe 4
-# Return: N/A
-# Description: generates visualizations to aid with exploratory data analysis
-########################################################################################################
 def make_visualizations(idealized, cs, ph, researchers):
+    """
+    generates visualizations to aid with exploratory data analysis
+    :param idealized: dataframe 1
+    :param cs: dataframe 2
+    :param ph: dataframe 3
+    :param researchers: dataframe 4
+    :return: void
+    """
 
     # plot appropriate histograms
     plot_histograms_overall(idealized, cs, ph, researchers)
@@ -162,14 +134,15 @@ def make_visualizations(idealized, cs, ph, researchers):
     create_heatmap(idealized, '%_of_idealized', f'{BASE_FP_OUTPUT_VISUALIZATIONS}')
 
 
-########################################################################################################
-# plot_histograms_overall
-# Inputs: idealized - dataframe 1, cs - dataframe 2, ph - dataframe 3, researchers - dataframe 4
-# Return: N/A
-# Description: creates histograms of each of the columns of interest, plus overall hist plots for each
-# df
-########################################################################################################
 def plot_histograms_overall(idealized, cs, ph, researchers):
+    """
+    creates histograms of each of the columns of interest, plus overall hist plots for each df
+    :param idealized: dataframe 1
+    :param cs: dataframe 2
+    :param ph: dataframe 3
+    :param researchers: dataframe 4
+    :return: void
+    """
 
     # create idealized histograms
     idealized.hist()
@@ -177,7 +150,7 @@ def plot_histograms_overall(idealized, cs, ph, researchers):
     plt.savefig(os.path.join(BASE_FP_OUTPUT_I, file_name))
     plt.clf()
 
-    for column in idealized_columns:
+    for column in idealized.columns:
         plot_histograms(idealized, column, BASE_FP_OUTPUT_I, "ideal")
 
     # create cs histograms
@@ -186,7 +159,7 @@ def plot_histograms_overall(idealized, cs, ph, researchers):
     plt.savefig(os.path.join(BASE_FP_OUTPUT_CS, file_name))
     plt.clf()
 
-    for column in cs_columns:
+    for column in cs.columns:
         plot_histograms(cs, column, BASE_FP_OUTPUT_CS, "cs")
 
     # create ph histograms
@@ -195,7 +168,7 @@ def plot_histograms_overall(idealized, cs, ph, researchers):
     plt.savefig(os.path.join(BASE_FP_OUTPUT_PH, file_name))
     plt.clf()
 
-    for column in ph_columns:
+    for column in ph.columns:
         plot_histograms(ph, column, BASE_FP_OUTPUT_PH, "ph")
 
     # create researchers histograms
@@ -204,17 +177,19 @@ def plot_histograms_overall(idealized, cs, ph, researchers):
     plt.savefig(os.path.join(BASE_FP_OUTPUT_RESEARCH, file_name))
     plt.clf()
 
-    for column in researcher_columns:
+    for column in researchers.columns:
         plot_histograms(researchers, column, BASE_FP_OUTPUT_RESEARCH, "research")
 
 
-########################################################################################################
-# plot_histograms
-# Inputs: df - dataframe, column - column to plot distribution of with histogram
-# Return: N/A
-# Description: plots histogram of specified dataframe column and saves plot
-########################################################################################################
 def plot_histograms(df, column, FILE_PATH, type):
+    """
+    plots histogram of specified dataframe column and saves plot
+    :param df: dataframe
+    :param column: column for histogram
+    :param FILE_PATH: base file path for output fig
+    :param type: flag for dataframe used to change histogram color
+    :return: void
+    """
 
     # change the color of the histograms
     if type == "cs":
@@ -241,13 +216,14 @@ def plot_histograms(df, column, FILE_PATH, type):
     plt.clf()
 
 
-########################################################################################################
-# plot_boxplots
-# Inputs: idealized - dataframe 1, cs - dataframe 2, ph - dataframe 3
-# Return: N/A
-# Description: plots boxplots of overall scores and saves plots
-########################################################################################################
 def plot_boxplots(idealized, cs, ph):
+    """
+    plots boxplots of overall scores and saves plots
+    :param idealized: dataframe 1
+    :param cs: dataframe 2
+    :param ph: dataframe 3
+    :return: void
+    """
 
     # create idealized boxplots
     idealized.boxplot(column=['%_of_idealized'])
@@ -268,13 +244,12 @@ def plot_boxplots(idealized, cs, ph):
     plt.clf()
 
 
-########################################################################################################
-# researcher_plots
-# Inputs: researchers - dataframe
-# Return: N/A
-# Description: plots figures and descriptive statistics for the three main researchers
-########################################################################################################
 def researcher_plots(researchers):
+    """
+    plots figures and descriptive statistics for the three main researchers
+    :param researchers: dataframe
+    :return: void
+    """
 
     # calculate summary stats for De Choudhury, Drezde, Coppersmith, and the remaining authors
     researchers_dict = {'Choudhury': [], 'Drezde': [], 'Coppersmith': [], 'Other': []}
@@ -338,14 +313,15 @@ def researcher_plots(researchers):
     plt.clf()
 
 
-########################################################################################################
-# create_heatmap
-# Inputs: idealized
-# Return: N/A
-# Description: Create heatmap to display the paper score breakdown, where the papers are ordered by
-# paper score and the columns are sorted by average score
-########################################################################################################
 def create_heatmap(idealized, column, fp):
+    """
+    Create heatmap to display the paper score breakdown, where the papers are ordered by paper score and the columns
+    are sorted by average score
+    :param idealized: dataframe
+    :param column: column to sort df by
+    :param fp: file path to save heatmap fig
+    :return: void
+    """
 
     temp_df = idealized.sort_values(by=column)
     df = temp_df.drop([column], axis=1)
@@ -361,14 +337,12 @@ def create_heatmap(idealized, column, fp):
     fig.write_image(os.path.join(fp, 'heatmap.png'))
 
 
-########################################################################################################
-# perform_eda
-# Inputs: filename
-# Return: N/A
-# Description: reads in file, generates summary statistics, and creates figures for exploratory data
-# analysis
-########################################################################################################
 def perform_eda(filename):
+    """
+    reads in file, generates summary statistics, and creates figures for exploratory data analysis
+    :param filename: name of file to read from
+    :return: void
+    """
 
     warnings.filterwarnings('ignore')
 
@@ -383,6 +357,11 @@ def perform_eda(filename):
 
 
 def analyze_predictions(filename):
+    """
+    reads in file with predicted scores at paper level and generates summary stats and heatmap
+    :param filename: name of file to read from
+    :return: void
+    """
 
     warnings.filterwarnings('ignore')
 
@@ -396,13 +375,11 @@ def analyze_predictions(filename):
     plot_histograms(predictions, 'predicted_score', f'{BASE_FP_OUTPUT_PREDICITONS}', type)
 
 
-########################################################################################################
-# main
-# Inputs: N/A
-# Return: N/A
-# Description:
-########################################################################################################
 def main():
+    """
+
+    :return: void
+    """
 
     print('running eda.py main')
 

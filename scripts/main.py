@@ -14,13 +14,11 @@ import topics
 import ml
 
 
-########################################################################################################
-# phase 1
-# Inputs: N/A
-# Return: N/A
-# Description: runs Phase 1: the data exporation and preprocessing phase
-########################################################################################################
 def phase1():
+    """
+    runs Phase 1: the data exporation and preprocessing phase
+    :return: void
+    """
 
     # Phase 1: data exploration and preprocessing
     print("Phase 1:\n")
@@ -32,14 +30,11 @@ def phase1():
     textCleaning.preprocess('../data/raw/classification/')
 
 
-########################################################################################################
-# phase2
-# Inputs: N/A
-# Return: N/A
-# Description: runs Phase 2: the optimizing topics and seed word list phase (repeated manually until
-# user is satisfied)
-########################################################################################################
 def phase2():
+    """
+    runs Phase 2: the optimizing topics and seed word list phase (repeat manually until satisfied with topics)
+    :return: void
+    """
 
     print("\nPhase 2:\n")
 
@@ -47,13 +42,11 @@ def phase2():
     topics.optimize_topics('../data/cleaned/training_text.csv', '../data/raw/seeds/seed_words.csv', 35, 1)
 
 
-########################################################################################################
-# phase3
-# Inputs: N/A
-# Return: N/A
-# Description: runs Phase 3: the final topic modeling run and classification phase
-########################################################################################################
 def phase3():
+    """
+    runs Phase 3: the final topic modeling run and classification phase
+    :return: void
+    """
 
     print("\nPhase 3:\n")
 
@@ -71,13 +64,11 @@ def phase3():
                       '../data/cleaned/classification/testing.csv')
 
 
-########################################################################################################
-# phase4
-# Inputs: N/A
-# Return: N/A
-# Description: Runs Phase 4, the analysis phase
-########################################################################################################
 def phase4():
+    """
+    Runs Phase 4, the analysis phase
+    :return: void
+    """
 
     print("\nPhase 4:\n")
 
@@ -85,14 +76,11 @@ def phase4():
     eda.analyze_predictions('../output/classification/predictions/document_predictions.csv')
 
 
-########################################################################################################
-# main
-# Inputs: N/A
-# Return: N/A
-# Description: Driver program which runs all four phases of transparency modeling from eda and preprocessing
-# to final analysis
-########################################################################################################
 def main():
+    """
+    Driver program which runs all four phases of transparency modeling from eda and preprocessing to final analysis
+    :return: void
+    """
 
     # Phase 1: data exploration and unsupervised learning
     phase1()

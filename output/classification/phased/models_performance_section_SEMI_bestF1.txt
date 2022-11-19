@@ -1,0 +1,3360 @@
+
+
+
+WORKING WITH CRITERIA random sample
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.8858858858858859
+[[286  14]
+ [ 24   9]]
+              precision    recall  f1-score   support
+
+           0       0.92      0.95      0.94       300
+           1       0.39      0.27      0.32        33
+
+    accuracy                           0.89       333
+   macro avg       0.66      0.61      0.63       333
+weighted avg       0.87      0.89      0.88       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.950000 (0.072887)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.8888888888888888
+[[287  13]
+ [ 24   9]]
+              precision    recall  f1-score   support
+
+           0       0.92      0.96      0.94       300
+           1       0.41      0.27      0.33        33
+
+    accuracy                           0.89       333
+   macro avg       0.67      0.61      0.63       333
+weighted avg       0.87      0.89      0.88       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.8888888888888888
+[[287  13]
+ [ 24   9]]
+              precision    recall  f1-score   support
+
+           0       0.92      0.96      0.94       300
+           1       0.41      0.27      0.33        33
+
+    accuracy                           0.89       333
+   macro avg       0.67      0.61      0.63       333
+weighted avg       0.87      0.89      0.88       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.8888888888888888
+[[287  13]
+ [ 24   9]]
+              precision    recall  f1-score   support
+
+           0       0.92      0.96      0.94       300
+           1       0.41      0.27      0.33        33
+
+    accuracy                           0.89       333
+   macro avg       0.67      0.61      0.63       333
+weighted avg       0.87      0.89      0.88       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.8888888888888888
+[[287  13]
+ [ 24   9]]
+              precision    recall  f1-score   support
+
+           0       0.92      0.96      0.94       300
+           1       0.41      0.27      0.33        33
+
+    accuracy                           0.89       333
+   macro avg       0.67      0.61      0.63       333
+weighted avg       0.87      0.89      0.88       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA dem dist
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.8348348348348348
+[[263  11]
+ [ 44  15]]
+              precision    recall  f1-score   support
+
+           0       0.86      0.96      0.91       274
+           1       0.58      0.25      0.35        59
+
+    accuracy                           0.83       333
+   macro avg       0.72      0.61      0.63       333
+weighted avg       0.81      0.83      0.81       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.967333 (0.031013)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.8348348348348348
+[[263  11]
+ [ 44  15]]
+              precision    recall  f1-score   support
+
+           0       0.86      0.96      0.91       274
+           1       0.58      0.25      0.35        59
+
+    accuracy                           0.83       333
+   macro avg       0.72      0.61      0.63       333
+weighted avg       0.81      0.83      0.81       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.8348348348348348
+[[263  11]
+ [ 44  15]]
+              precision    recall  f1-score   support
+
+           0       0.86      0.96      0.91       274
+           1       0.58      0.25      0.35        59
+
+    accuracy                           0.83       333
+   macro avg       0.72      0.61      0.63       333
+weighted avg       0.81      0.83      0.81       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.8348348348348348
+[[263  11]
+ [ 44  15]]
+              precision    recall  f1-score   support
+
+           0       0.86      0.96      0.91       274
+           1       0.58      0.25      0.35        59
+
+    accuracy                           0.83       333
+   macro avg       0.72      0.61      0.63       333
+weighted avg       0.81      0.83      0.81       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.8348348348348348
+[[263  11]
+ [ 44  15]]
+              precision    recall  f1-score   support
+
+           0       0.86      0.96      0.91       274
+           1       0.58      0.25      0.35        59
+
+    accuracy                           0.83       333
+   macro avg       0.72      0.61      0.63       333
+weighted avg       0.81      0.83      0.81       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA informed consent
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.8678678678678678
+[[279  43]
+ [  1  10]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.87      0.93       322
+           1       0.19      0.91      0.31        11
+
+    accuracy                           0.87       333
+   macro avg       0.59      0.89      0.62       333
+weighted avg       0.97      0.87      0.91       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.966667 (0.066667)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.8738738738738738
+[[281  41]
+ [  1  10]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.87      0.93       322
+           1       0.20      0.91      0.32        11
+
+    accuracy                           0.87       333
+   macro avg       0.60      0.89      0.63       333
+weighted avg       0.97      0.87      0.91       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.8738738738738738
+[[281  41]
+ [  1  10]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.87      0.93       322
+           1       0.20      0.91      0.32        11
+
+    accuracy                           0.87       333
+   macro avg       0.60      0.89      0.63       333
+weighted avg       0.97      0.87      0.91       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.8738738738738738
+[[281  41]
+ [  1  10]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.87      0.93       322
+           1       0.20      0.91      0.32        11
+
+    accuracy                           0.87       333
+   macro avg       0.60      0.89      0.63       333
+weighted avg       0.97      0.87      0.91       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.8738738738738738
+[[281  41]
+ [  1  10]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.87      0.93       322
+           1       0.20      0.91      0.32        11
+
+    accuracy                           0.87       333
+   macro avg       0.60      0.89      0.63       333
+weighted avg       0.97      0.87      0.91       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA data public
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.8738738738738738
+[[278  36]
+ [  6  13]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.89      0.93       314
+           1       0.27      0.68      0.38        19
+
+    accuracy                           0.87       333
+   macro avg       0.62      0.78      0.66       333
+weighted avg       0.94      0.87      0.90       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.983333 (0.020412)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.8738738738738738
+[[278  36]
+ [  6  13]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.89      0.93       314
+           1       0.27      0.68      0.38        19
+
+    accuracy                           0.87       333
+   macro avg       0.62      0.78      0.66       333
+weighted avg       0.94      0.87      0.90       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.8738738738738738
+[[278  36]
+ [  6  13]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.89      0.93       314
+           1       0.27      0.68      0.38        19
+
+    accuracy                           0.87       333
+   macro avg       0.62      0.78      0.66       333
+weighted avg       0.94      0.87      0.90       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.8738738738738738
+[[278  36]
+ [  6  13]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.89      0.93       314
+           1       0.27      0.68      0.38        19
+
+    accuracy                           0.87       333
+   macro avg       0.62      0.78      0.66       333
+weighted avg       0.94      0.87      0.90       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.8738738738738738
+[[278  36]
+ [  6  13]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.89      0.93       314
+           1       0.27      0.68      0.38        19
+
+    accuracy                           0.87       333
+   macro avg       0.62      0.78      0.66       333
+weighted avg       0.94      0.87      0.90       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA irb
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.9429429429429429
+[[308  15]
+ [  4   6]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.95      0.97       323
+           1       0.29      0.60      0.39        10
+
+    accuracy                           0.94       333
+   macro avg       0.64      0.78      0.68       333
+weighted avg       0.97      0.94      0.95       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.933333 (0.081650)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.984984984984985
+[[322   1]
+ [  4   6]]
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       323
+           1       0.86      0.60      0.71        10
+
+    accuracy                           0.98       333
+   macro avg       0.92      0.80      0.85       333
+weighted avg       0.98      0.98      0.98       333
+
+
+Cross Validation Results:
+CART: 0.986074 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.984984984984985
+[[322   1]
+ [  4   6]]
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       323
+           1       0.86      0.60      0.71        10
+
+    accuracy                           0.98       333
+   macro avg       0.92      0.80      0.85       333
+weighted avg       0.98      0.98      0.98       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.984984984984985
+[[322   1]
+ [  4   6]]
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       323
+           1       0.86      0.60      0.71        10
+
+    accuracy                           0.98       333
+   macro avg       0.92      0.80      0.85       333
+weighted avg       0.98      0.98      0.98       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.984984984984985
+[[322   1]
+ [  4   6]]
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       323
+           1       0.86      0.60      0.71        10
+
+    accuracy                           0.98       333
+   macro avg       0.92      0.80      0.85       333
+weighted avg       0.98      0.98      0.98       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA limitations
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.7147147147147147
+[[230  88]
+ [  7   8]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.72      0.83       318
+           1       0.08      0.53      0.14        15
+
+    accuracy                           0.71       333
+   macro avg       0.53      0.63      0.49       333
+weighted avg       0.93      0.71      0.80       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.975000 (0.030619)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.7177177177177178
+[[231  87]
+ [  7   8]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.73      0.83       318
+           1       0.08      0.53      0.15        15
+
+    accuracy                           0.72       333
+   macro avg       0.53      0.63      0.49       333
+weighted avg       0.93      0.72      0.80       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.7177177177177178
+[[231  87]
+ [  7   8]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.73      0.83       318
+           1       0.08      0.53      0.15        15
+
+    accuracy                           0.72       333
+   macro avg       0.53      0.63      0.49       333
+weighted avg       0.93      0.72      0.80       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.7177177177177178
+[[231  87]
+ [  7   8]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.73      0.83       318
+           1       0.08      0.53      0.15        15
+
+    accuracy                           0.72       333
+   macro avg       0.53      0.63      0.49       333
+weighted avg       0.93      0.72      0.80       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.7177177177177178
+[[231  87]
+ [  7   8]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.73      0.83       318
+           1       0.08      0.53      0.15        15
+
+    accuracy                           0.72       333
+   macro avg       0.53      0.63      0.49       333
+weighted avg       0.93      0.72      0.80       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA anonymity
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.7717717717717718
+[[248  38]
+ [ 38   9]]
+              precision    recall  f1-score   support
+
+           0       0.87      0.87      0.87       286
+           1       0.19      0.19      0.19        47
+
+    accuracy                           0.77       333
+   macro avg       0.53      0.53      0.53       333
+weighted avg       0.77      0.77      0.77       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.910606 (0.057576)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.7717717717717718
+[[248  38]
+ [ 38   9]]
+              precision    recall  f1-score   support
+
+           0       0.87      0.87      0.87       286
+           1       0.19      0.19      0.19        47
+
+    accuracy                           0.77       333
+   macro avg       0.53      0.53      0.53       333
+weighted avg       0.77      0.77      0.77       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.7717717717717718
+[[248  38]
+ [ 38   9]]
+              precision    recall  f1-score   support
+
+           0       0.87      0.87      0.87       286
+           1       0.19      0.19      0.19        47
+
+    accuracy                           0.77       333
+   macro avg       0.53      0.53      0.53       333
+weighted avg       0.77      0.77      0.77       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.7717717717717718
+[[248  38]
+ [ 38   9]]
+              precision    recall  f1-score   support
+
+           0       0.87      0.87      0.87       286
+           1       0.19      0.19      0.19        47
+
+    accuracy                           0.77       333
+   macro avg       0.53      0.53      0.53       333
+weighted avg       0.77      0.77      0.77       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.7717717717717718
+[[248  38]
+ [ 38   9]]
+              precision    recall  f1-score   support
+
+           0       0.87      0.87      0.87       286
+           1       0.19      0.19      0.19        47
+
+    accuracy                           0.77       333
+   macro avg       0.53      0.53      0.53       333
+weighted avg       0.77      0.77      0.77       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA data quality
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.933933933933934
+[[296  15]
+ [  7  15]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.95      0.96       311
+           1       0.50      0.68      0.58        22
+
+    accuracy                           0.93       333
+   macro avg       0.74      0.82      0.77       333
+weighted avg       0.95      0.93      0.94       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.975000 (0.050000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.9369369369369369
+[[297  14]
+ [  7  15]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.95      0.97       311
+           1       0.52      0.68      0.59        22
+
+    accuracy                           0.94       333
+   macro avg       0.75      0.82      0.78       333
+weighted avg       0.95      0.94      0.94       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.9369369369369369
+[[297  14]
+ [  7  15]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.95      0.97       311
+           1       0.52      0.68      0.59        22
+
+    accuracy                           0.94       333
+   macro avg       0.75      0.82      0.78       333
+weighted avg       0.95      0.94      0.94       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.9369369369369369
+[[297  14]
+ [  7  15]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.95      0.97       311
+           1       0.52      0.68      0.59        22
+
+    accuracy                           0.94       333
+   macro avg       0.75      0.82      0.78       333
+weighted avg       0.95      0.94      0.94       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.9369369369369369
+[[297  14]
+ [  7  15]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.95      0.97       311
+           1       0.52      0.68      0.59        22
+
+    accuracy                           0.94       333
+   macro avg       0.75      0.82      0.78       333
+weighted avg       0.95      0.94      0.94       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA missing values
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.975975975975976
+[[325   8]
+ [  0   0]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99       333
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.98       333
+   macro avg       0.50      0.49      0.49       333
+weighted avg       1.00      0.98      0.99       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.866667 (0.163299)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.984984984984985
+[[328   5]
+ [  0   0]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99       333
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.98       333
+   macro avg       0.50      0.49      0.50       333
+weighted avg       1.00      0.98      0.99       333
+
+
+Cross Validation Results:
+CART: 0.868000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.984984984984985
+[[328   5]
+ [  0   0]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99       333
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.98       333
+   macro avg       0.50      0.49      0.50       333
+weighted avg       1.00      0.98      0.99       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.984984984984985
+[[328   5]
+ [  0   0]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99       333
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.98       333
+   macro avg       0.50      0.49      0.50       333
+weighted avg       1.00      0.98      0.99       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.984984984984985
+[[328   5]
+ [  0   0]]
+              precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99       333
+           1       0.00      0.00      0.00         0
+
+    accuracy                           0.98       333
+   macro avg       0.50      0.49      0.50       333
+weighted avg       1.00      0.98      0.99       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA ethics section
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.9369369369369369
+[[308  18]
+ [  3   4]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.94      0.97       326
+           1       0.18      0.57      0.28         7
+
+    accuracy                           0.94       333
+   macro avg       0.59      0.76      0.62       333
+weighted avg       0.97      0.94      0.95       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.826667 (0.183060)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.954954954954955
+[[314  12]
+ [  3   4]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.96      0.98       326
+           1       0.25      0.57      0.35         7
+
+    accuracy                           0.95       333
+   macro avg       0.62      0.77      0.66       333
+weighted avg       0.97      0.95      0.96       333
+
+
+Cross Validation Results:
+CART: 0.897111 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.954954954954955
+[[314  12]
+ [  3   4]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.96      0.98       326
+           1       0.25      0.57      0.35         7
+
+    accuracy                           0.95       333
+   macro avg       0.62      0.77      0.66       333
+weighted avg       0.97      0.95      0.96       333
+
+
+Cross Validation Results:
+KNN: 0.963926 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.954954954954955
+[[314  12]
+ [  3   4]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.96      0.98       326
+           1       0.25      0.57      0.35         7
+
+    accuracy                           0.95       333
+   macro avg       0.62      0.77      0.66       333
+weighted avg       0.97      0.95      0.96       333
+
+
+Cross Validation Results:
+SVM: 0.963926 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.954954954954955
+[[314  12]
+ [  3   4]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.96      0.98       326
+           1       0.25      0.57      0.35         7
+
+    accuracy                           0.95       333
+   macro avg       0.62      0.77      0.66       333
+weighted avg       0.97      0.95      0.96       333
+
+
+Cross Validation Results:
+NeuralNet: 0.933333 (0.081650)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA generalizability
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.924924924924925
+[[307  18]
+ [  7   1]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.94      0.96       325
+           1       0.05      0.12      0.07         8
+
+    accuracy                           0.92       333
+   macro avg       0.52      0.53      0.52       333
+weighted avg       0.96      0.92      0.94       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.850000 (0.093541)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.9369369369369369
+[[311  14]
+ [  7   1]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.96      0.97       325
+           1       0.07      0.12      0.09         8
+
+    accuracy                           0.94       333
+   macro avg       0.52      0.54      0.53       333
+weighted avg       0.96      0.94      0.95       333
+
+
+Cross Validation Results:
+CART: 0.865128 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.9369369369369369
+[[311  14]
+ [  7   1]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.96      0.97       325
+           1       0.07      0.12      0.09         8
+
+    accuracy                           0.94       333
+   macro avg       0.52      0.54      0.53       333
+weighted avg       0.96      0.94      0.95       333
+
+
+Cross Validation Results:
+KNN: 0.875092 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.9369369369369369
+[[311  14]
+ [  7   1]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.96      0.97       325
+           1       0.07      0.12      0.09         8
+
+    accuracy                           0.94       333
+   macro avg       0.52      0.54      0.53       333
+weighted avg       0.96      0.94      0.95       333
+
+
+Cross Validation Results:
+SVM: 0.875092 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.9309309309309309
+[[309  16]
+ [  7   1]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.95      0.96       325
+           1       0.06      0.12      0.08         8
+
+    accuracy                           0.93       333
+   macro avg       0.52      0.54      0.52       333
+weighted avg       0.96      0.93      0.94       333
+
+
+Cross Validation Results:
+NeuralNet: 0.800000 (0.127475)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA target pop
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.6666666666666666
+[[212  87]
+ [ 24  10]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.71      0.79       299
+           1       0.10      0.29      0.15        34
+
+    accuracy                           0.67       333
+   macro avg       0.50      0.50      0.47       333
+weighted avg       0.82      0.67      0.73       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.971429 (0.023328)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.6666666666666666
+[[212  87]
+ [ 24  10]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.71      0.79       299
+           1       0.10      0.29      0.15        34
+
+    accuracy                           0.67       333
+   macro avg       0.50      0.50      0.47       333
+weighted avg       0.82      0.67      0.73       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.6666666666666666
+[[212  87]
+ [ 24  10]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.71      0.79       299
+           1       0.10      0.29      0.15        34
+
+    accuracy                           0.67       333
+   macro avg       0.50      0.50      0.47       333
+weighted avg       0.82      0.67      0.73       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.6666666666666666
+[[212  87]
+ [ 24  10]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.71      0.79       299
+           1       0.10      0.29      0.15        34
+
+    accuracy                           0.67       333
+   macro avg       0.50      0.50      0.47       333
+weighted avg       0.82      0.67      0.73       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.6666666666666666
+[[212  87]
+ [ 24  10]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.71      0.79       299
+           1       0.10      0.29      0.15        34
+
+    accuracy                           0.67       333
+   macro avg       0.50      0.50      0.47       333
+weighted avg       0.82      0.67      0.73       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA hypotheses
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.45045045045045046
+[[150 181]
+ [  2   0]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.45      0.62       331
+           1       0.00      0.00      0.00         2
+
+    accuracy                           0.45       333
+   macro avg       0.49      0.23      0.31       333
+weighted avg       0.98      0.45      0.62       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.950000 (0.100000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.5405405405405406
+[[180 151]
+ [  2   0]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.54      0.70       331
+           1       0.00      0.00      0.00         2
+
+    accuracy                           0.54       333
+   macro avg       0.49      0.27      0.35       333
+weighted avg       0.98      0.54      0.70       333
+
+
+Cross Validation Results:
+CART: 0.833810 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.5405405405405406
+[[180 151]
+ [  2   0]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.54      0.70       331
+           1       0.00      0.00      0.00         2
+
+    accuracy                           0.54       333
+   macro avg       0.49      0.27      0.35       333
+weighted avg       0.98      0.54      0.70       333
+
+
+Cross Validation Results:
+KNN: 0.950159 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.5405405405405406
+[[180 151]
+ [  2   0]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.54      0.70       331
+           1       0.00      0.00      0.00         2
+
+    accuracy                           0.54       333
+   macro avg       0.49      0.27      0.35       333
+weighted avg       0.98      0.54      0.70       333
+
+
+Cross Validation Results:
+SVM: 0.950159 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.5405405405405406
+[[180 151]
+ [  2   0]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.54      0.70       331
+           1       0.00      0.00      0.00         2
+
+    accuracy                           0.54       333
+   macro avg       0.49      0.27      0.35       333
+weighted avg       0.98      0.54      0.70       333
+
+
+Cross Validation Results:
+NeuralNet: 0.950000 (0.100000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA data availability
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.3333333333333333
+[[105 218]
+ [  4   6]]
+              precision    recall  f1-score   support
+
+           0       0.96      0.33      0.49       323
+           1       0.03      0.60      0.05        10
+
+    accuracy                           0.33       333
+   macro avg       0.50      0.46      0.27       333
+weighted avg       0.94      0.33      0.47       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.500000 (0.316228)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.3063063063063063
+[[ 94 229]
+ [  2   8]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.29      0.45       323
+           1       0.03      0.80      0.06        10
+
+    accuracy                           0.31       333
+   macro avg       0.51      0.55      0.26       333
+weighted avg       0.95      0.31      0.44       333
+
+
+Cross Validation Results:
+CART: 0.331667 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.9429429429429429
+[[314   9]
+ [ 10   0]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.97      0.97       323
+           1       0.00      0.00      0.00        10
+
+    accuracy                           0.94       333
+   macro avg       0.48      0.49      0.49       333
+weighted avg       0.94      0.94      0.94       333
+
+
+Cross Validation Results:
+KNN: 0.453333 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.960960960960961
+[[320   3]
+ [ 10   0]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.99      0.98       323
+           1       0.00      0.00      0.00        10
+
+    accuracy                           0.96       333
+   macro avg       0.48      0.50      0.49       333
+weighted avg       0.94      0.96      0.95       333
+
+
+Cross Validation Results:
+SVM: 0.409444 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.3333333333333333
+[[104 219]
+ [  3   7]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.32      0.48       323
+           1       0.03      0.70      0.06        10
+
+    accuracy                           0.33       333
+   macro avg       0.50      0.51      0.27       333
+weighted avg       0.94      0.33      0.47       333
+
+
+Cross Validation Results:
+NeuralNet: 0.300000 (0.244949)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA preprocessing
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.6816816816816816
+[[219  93]
+ [ 13   8]]
+              precision    recall  f1-score   support
+
+           0       0.94      0.70      0.81       312
+           1       0.08      0.38      0.13        21
+
+    accuracy                           0.68       333
+   macro avg       0.51      0.54      0.47       333
+weighted avg       0.89      0.68      0.76       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.700000 (0.150000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.2042042042042042
+[[ 49 263]
+ [  2  19]]
+              precision    recall  f1-score   support
+
+           0       0.96      0.16      0.27       312
+           1       0.07      0.90      0.13        21
+
+    accuracy                           0.20       333
+   macro avg       0.51      0.53      0.20       333
+weighted avg       0.90      0.20      0.26       333
+
+
+Cross Validation Results:
+CART: 0.500806 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.5675675675675675
+[[179 133]
+ [ 11  10]]
+              precision    recall  f1-score   support
+
+           0       0.94      0.57      0.71       312
+           1       0.07      0.48      0.12        21
+
+    accuracy                           0.57       333
+   macro avg       0.51      0.52      0.42       333
+weighted avg       0.89      0.57      0.68       333
+
+
+Cross Validation Results:
+KNN: 0.610952 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.6816816816816816
+[[220  92]
+ [ 14   7]]
+              precision    recall  f1-score   support
+
+           0       0.94      0.71      0.81       312
+           1       0.07      0.33      0.12        21
+
+    accuracy                           0.68       333
+   macro avg       0.51      0.52      0.46       333
+weighted avg       0.89      0.68      0.76       333
+
+
+Cross Validation Results:
+SVM: 0.695568 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.93993993993994
+[[312   0]
+ [ 20   1]]
+              precision    recall  f1-score   support
+
+           0       0.94      1.00      0.97       312
+           1       1.00      0.05      0.09        21
+
+    accuracy                           0.94       333
+   macro avg       0.97      0.52      0.53       333
+weighted avg       0.94      0.94      0.91       333
+
+
+Cross Validation Results:
+NeuralNet: 0.475000 (0.229129)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA var selection
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.6456456456456456
+[[187 101]
+ [ 17  28]]
+              precision    recall  f1-score   support
+
+           0       0.92      0.65      0.76       288
+           1       0.22      0.62      0.32        45
+
+    accuracy                           0.65       333
+   macro avg       0.57      0.64      0.54       333
+weighted avg       0.82      0.65      0.70       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.912857 (0.054557)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.6456456456456456
+[[187 101]
+ [ 17  28]]
+              precision    recall  f1-score   support
+
+           0       0.92      0.65      0.76       288
+           1       0.22      0.62      0.32        45
+
+    accuracy                           0.65       333
+   macro avg       0.57      0.64      0.54       333
+weighted avg       0.82      0.65      0.70       333
+
+
+Cross Validation Results:
+CART: 0.941176 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.6456456456456456
+[[187 101]
+ [ 17  28]]
+              precision    recall  f1-score   support
+
+           0       0.92      0.65      0.76       288
+           1       0.22      0.62      0.32        45
+
+    accuracy                           0.65       333
+   macro avg       0.57      0.64      0.54       333
+weighted avg       0.82      0.65      0.70       333
+
+
+Cross Validation Results:
+KNN: 0.940980 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.6456456456456456
+[[187 101]
+ [ 17  28]]
+              precision    recall  f1-score   support
+
+           0       0.92      0.65      0.76       288
+           1       0.22      0.62      0.32        45
+
+    accuracy                           0.65       333
+   macro avg       0.57      0.64      0.54       333
+weighted avg       0.82      0.65      0.70       333
+
+
+Cross Validation Results:
+SVM: 0.941176 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.6456456456456456
+[[187 101]
+ [ 17  28]]
+              precision    recall  f1-score   support
+
+           0       0.92      0.65      0.76       288
+           1       0.22      0.62      0.32        45
+
+    accuracy                           0.65       333
+   macro avg       0.57      0.64      0.54       333
+weighted avg       0.82      0.65      0.70       333
+
+
+Cross Validation Results:
+NeuralNet: 0.883810 (0.083182)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA var construction
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.6546546546546547
+[[200 100]
+ [ 15  18]]
+              precision    recall  f1-score   support
+
+           0       0.93      0.67      0.78       300
+           1       0.15      0.55      0.24        33
+
+    accuracy                           0.65       333
+   macro avg       0.54      0.61      0.51       333
+weighted avg       0.85      0.65      0.72       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.792982 (0.092231)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.6546546546546547
+[[200 100]
+ [ 15  18]]
+              precision    recall  f1-score   support
+
+           0       0.93      0.67      0.78       300
+           1       0.15      0.55      0.24        33
+
+    accuracy                           0.65       333
+   macro avg       0.54      0.61      0.51       333
+weighted avg       0.85      0.65      0.72       333
+
+
+Cross Validation Results:
+CART: 0.833857 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.6576576576576577
+[[201  99]
+ [ 15  18]]
+              precision    recall  f1-score   support
+
+           0       0.93      0.67      0.78       300
+           1       0.15      0.55      0.24        33
+
+    accuracy                           0.66       333
+   macro avg       0.54      0.61      0.51       333
+weighted avg       0.85      0.66      0.73       333
+
+
+Cross Validation Results:
+KNN: 0.812703 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.6546546546546547
+[[200 100]
+ [ 15  18]]
+              precision    recall  f1-score   support
+
+           0       0.93      0.67      0.78       300
+           1       0.15      0.55      0.24        33
+
+    accuracy                           0.65       333
+   macro avg       0.54      0.61      0.51       333
+weighted avg       0.85      0.65      0.72       333
+
+
+Cross Validation Results:
+SVM: 0.836867 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.43843843843843844
+[[122 178]
+ [  9  24]]
+              precision    recall  f1-score   support
+
+           0       0.93      0.41      0.57       300
+           1       0.12      0.73      0.20        33
+
+    accuracy                           0.44       333
+   macro avg       0.53      0.57      0.39       333
+weighted avg       0.85      0.44      0.53       333
+
+
+Cross Validation Results:
+NeuralNet: 0.608772 (0.078772)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA var reconstruction
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.5495495495495496
+[[169 146]
+ [  4  14]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.54      0.69       315
+           1       0.09      0.78      0.16        18
+
+    accuracy                           0.55       333
+   macro avg       0.53      0.66      0.42       333
+weighted avg       0.93      0.55      0.66       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.703571 (0.117152)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.5735735735735735
+[[177 138]
+ [  4  14]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.56      0.71       315
+           1       0.09      0.78      0.16        18
+
+    accuracy                           0.57       333
+   macro avg       0.54      0.67      0.44       333
+weighted avg       0.93      0.57      0.68       333
+
+
+Cross Validation Results:
+CART: 0.700214 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.5735735735735735
+[[177 138]
+ [  4  14]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.56      0.71       315
+           1       0.09      0.78      0.16        18
+
+    accuracy                           0.57       333
+   macro avg       0.54      0.67      0.44       333
+weighted avg       0.93      0.57      0.68       333
+
+
+Cross Validation Results:
+KNN: 0.806838 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.5735735735735735
+[[177 138]
+ [  4  14]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.56      0.71       315
+           1       0.09      0.78      0.16        18
+
+    accuracy                           0.57       333
+   macro avg       0.54      0.67      0.44       333
+weighted avg       0.93      0.57      0.68       333
+
+
+Cross Validation Results:
+SVM: 0.815812 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.5735735735735735
+[[177 138]
+ [  4  14]]
+              precision    recall  f1-score   support
+
+           0       0.98      0.56      0.71       315
+           1       0.09      0.78      0.16        18
+
+    accuracy                           0.57       333
+   macro avg       0.54      0.67      0.44       333
+weighted avg       0.93      0.57      0.68       333
+
+
+Cross Validation Results:
+NeuralNet: 0.707143 (0.105100)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA list models
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.6786786786786787
+[[171  64]
+ [ 43  55]]
+              precision    recall  f1-score   support
+
+           0       0.80      0.73      0.76       235
+           1       0.46      0.56      0.51        98
+
+    accuracy                           0.68       333
+   macro avg       0.63      0.64      0.63       333
+weighted avg       0.70      0.68      0.69       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.975667 (0.032173)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.6786786786786787
+[[171  64]
+ [ 43  55]]
+              precision    recall  f1-score   support
+
+           0       0.80      0.73      0.76       235
+           1       0.46      0.56      0.51        98
+
+    accuracy                           0.68       333
+   macro avg       0.63      0.64      0.63       333
+weighted avg       0.70      0.68      0.69       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.6786786786786787
+[[171  64]
+ [ 43  55]]
+              precision    recall  f1-score   support
+
+           0       0.80      0.73      0.76       235
+           1       0.46      0.56      0.51        98
+
+    accuracy                           0.68       333
+   macro avg       0.63      0.64      0.63       333
+weighted avg       0.70      0.68      0.69       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.6786786786786787
+[[171  64]
+ [ 43  55]]
+              precision    recall  f1-score   support
+
+           0       0.80      0.73      0.76       235
+           1       0.46      0.56      0.51        98
+
+    accuracy                           0.68       333
+   macro avg       0.63      0.64      0.63       333
+weighted avg       0.70      0.68      0.69       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.6786786786786787
+[[171  64]
+ [ 43  55]]
+              precision    recall  f1-score   support
+
+           0       0.80      0.73      0.76       235
+           1       0.46      0.56      0.51        98
+
+    accuracy                           0.68       333
+   macro avg       0.63      0.64      0.63       333
+weighted avg       0.70      0.68      0.69       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA model steps
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.6006006006006006
+[[153 112]
+ [ 21  47]]
+              precision    recall  f1-score   support
+
+           0       0.88      0.58      0.70       265
+           1       0.30      0.69      0.41        68
+
+    accuracy                           0.60       333
+   macro avg       0.59      0.63      0.56       333
+weighted avg       0.76      0.60      0.64       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.911264 (0.055260)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.6006006006006006
+[[153 112]
+ [ 21  47]]
+              precision    recall  f1-score   support
+
+           0       0.88      0.58      0.70       265
+           1       0.30      0.69      0.41        68
+
+    accuracy                           0.60       333
+   macro avg       0.59      0.63      0.56       333
+weighted avg       0.76      0.60      0.64       333
+
+
+Cross Validation Results:
+CART: 0.910961 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.6006006006006006
+[[153 112]
+ [ 21  47]]
+              precision    recall  f1-score   support
+
+           0       0.88      0.58      0.70       265
+           1       0.30      0.69      0.41        68
+
+    accuracy                           0.60       333
+   macro avg       0.59      0.63      0.56       333
+weighted avg       0.76      0.60      0.64       333
+
+
+Cross Validation Results:
+KNN: 0.902588 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.6006006006006006
+[[153 112]
+ [ 21  47]]
+              precision    recall  f1-score   support
+
+           0       0.88      0.58      0.70       265
+           1       0.30      0.69      0.41        68
+
+    accuracy                           0.60       333
+   macro avg       0.59      0.63      0.56       333
+weighted avg       0.76      0.60      0.64       333
+
+
+Cross Validation Results:
+SVM: 0.910961 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.5885885885885885
+[[149 116]
+ [ 21  47]]
+              precision    recall  f1-score   support
+
+           0       0.88      0.56      0.69       265
+           1       0.29      0.69      0.41        68
+
+    accuracy                           0.59       333
+   macro avg       0.58      0.63      0.55       333
+weighted avg       0.76      0.59      0.63       333
+
+
+Cross Validation Results:
+NeuralNet: 0.856092 (0.059462)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA model choice
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.6276276276276276
+[[183 103]
+ [ 21  26]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.64      0.75       286
+           1       0.20      0.55      0.30        47
+
+    accuracy                           0.63       333
+   macro avg       0.55      0.60      0.52       333
+weighted avg       0.80      0.63      0.68       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.963971 (0.029449)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.6276276276276276
+[[183 103]
+ [ 21  26]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.64      0.75       286
+           1       0.20      0.55      0.30        47
+
+    accuracy                           0.63       333
+   macro avg       0.55      0.60      0.52       333
+weighted avg       0.80      0.63      0.68       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.6276276276276276
+[[183 103]
+ [ 21  26]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.64      0.75       286
+           1       0.20      0.55      0.30        47
+
+    accuracy                           0.63       333
+   macro avg       0.55      0.60      0.52       333
+weighted avg       0.80      0.63      0.68       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.6276276276276276
+[[183 103]
+ [ 21  26]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.64      0.75       286
+           1       0.20      0.55      0.30        47
+
+    accuracy                           0.63       333
+   macro avg       0.55      0.60      0.52       333
+weighted avg       0.80      0.63      0.68       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.6276276276276276
+[[183 103]
+ [ 21  26]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.64      0.75       286
+           1       0.20      0.55      0.30        47
+
+    accuracy                           0.63       333
+   macro avg       0.55      0.60      0.52       333
+weighted avg       0.80      0.63      0.68       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA define measures
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.6726726726726727
+[[206  88]
+ [ 21  18]]
+              precision    recall  f1-score   support
+
+           0       0.91      0.70      0.79       294
+           1       0.17      0.46      0.25        39
+
+    accuracy                           0.67       333
+   macro avg       0.54      0.58      0.52       333
+weighted avg       0.82      0.67      0.73       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.943810 (0.028156)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.6726726726726727
+[[206  88]
+ [ 21  18]]
+              precision    recall  f1-score   support
+
+           0       0.91      0.70      0.79       294
+           1       0.17      0.46      0.25        39
+
+    accuracy                           0.67       333
+   macro avg       0.54      0.58      0.52       333
+weighted avg       0.82      0.67      0.73       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.6726726726726727
+[[206  88]
+ [ 21  18]]
+              precision    recall  f1-score   support
+
+           0       0.91      0.70      0.79       294
+           1       0.17      0.46      0.25        39
+
+    accuracy                           0.67       333
+   macro avg       0.54      0.58      0.52       333
+weighted avg       0.82      0.67      0.73       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.6726726726726727
+[[206  88]
+ [ 21  18]]
+              precision    recall  f1-score   support
+
+           0       0.91      0.70      0.79       294
+           1       0.17      0.46      0.25        39
+
+    accuracy                           0.67       333
+   macro avg       0.54      0.58      0.52       333
+weighted avg       0.82      0.67      0.73       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.6726726726726727
+[[206  88]
+ [ 21  18]]
+              precision    recall  f1-score   support
+
+           0       0.91      0.70      0.79       294
+           1       0.17      0.46      0.25        39
+
+    accuracy                           0.67       333
+   macro avg       0.54      0.58      0.52       333
+weighted avg       0.82      0.67      0.73       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA common uses
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.6816816816816816
+[[218  95]
+ [ 11   9]]
+              precision    recall  f1-score   support
+
+           0       0.95      0.70      0.80       313
+           1       0.09      0.45      0.15        20
+
+    accuracy                           0.68       333
+   macro avg       0.52      0.57      0.47       333
+weighted avg       0.90      0.68      0.76       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.955556 (0.054433)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.6816816816816816
+[[218  95]
+ [ 11   9]]
+              precision    recall  f1-score   support
+
+           0       0.95      0.70      0.80       313
+           1       0.09      0.45      0.15        20
+
+    accuracy                           0.68       333
+   macro avg       0.52      0.57      0.47       333
+weighted avg       0.90      0.68      0.76       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.6816816816816816
+[[218  95]
+ [ 11   9]]
+              precision    recall  f1-score   support
+
+           0       0.95      0.70      0.80       313
+           1       0.09      0.45      0.15        20
+
+    accuracy                           0.68       333
+   macro avg       0.52      0.57      0.47       333
+weighted avg       0.90      0.68      0.76       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.6816816816816816
+[[218  95]
+ [ 11   9]]
+              precision    recall  f1-score   support
+
+           0       0.95      0.70      0.80       313
+           1       0.09      0.45      0.15        20
+
+    accuracy                           0.68       333
+   macro avg       0.52      0.57      0.47       333
+weighted avg       0.90      0.68      0.76       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.6816816816816816
+[[218  95]
+ [ 11   9]]
+              precision    recall  f1-score   support
+
+           0       0.95      0.70      0.80       313
+           1       0.09      0.45      0.15        20
+
+    accuracy                           0.68       333
+   macro avg       0.52      0.57      0.47       333
+weighted avg       0.90      0.68      0.76       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA cv
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.7507507507507507
+[[240  76]
+ [  7  10]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.76      0.85       316
+           1       0.12      0.59      0.19        17
+
+    accuracy                           0.75       333
+   macro avg       0.54      0.67      0.52       333
+weighted avg       0.93      0.75      0.82       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.960000 (0.080000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.7537537537537538
+[[241  75]
+ [  7  10]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.76      0.85       316
+           1       0.12      0.59      0.20        17
+
+    accuracy                           0.75       333
+   macro avg       0.54      0.68      0.53       333
+weighted avg       0.93      0.75      0.82       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.7537537537537538
+[[241  75]
+ [  7  10]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.76      0.85       316
+           1       0.12      0.59      0.20        17
+
+    accuracy                           0.75       333
+   macro avg       0.54      0.68      0.53       333
+weighted avg       0.93      0.75      0.82       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.7537537537537538
+[[241  75]
+ [  7  10]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.76      0.85       316
+           1       0.12      0.59      0.20        17
+
+    accuracy                           0.75       333
+   macro avg       0.54      0.68      0.53       333
+weighted avg       0.93      0.75      0.82       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.7537537537537538
+[[241  75]
+ [  7  10]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.76      0.85       316
+           1       0.12      0.59      0.20        17
+
+    accuracy                           0.75       333
+   macro avg       0.54      0.68      0.53       333
+weighted avg       0.93      0.75      0.82       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA hyperparameters
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.6876876876876877
+[[212  94]
+ [ 10  17]]
+              precision    recall  f1-score   support
+
+           0       0.95      0.69      0.80       306
+           1       0.15      0.63      0.25        27
+
+    accuracy                           0.69       333
+   macro avg       0.55      0.66      0.52       333
+weighted avg       0.89      0.69      0.76       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.957778 (0.051831)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.6846846846846847
+[[212  94]
+ [ 11  16]]
+              precision    recall  f1-score   support
+
+           0       0.95      0.69      0.80       306
+           1       0.15      0.59      0.23        27
+
+    accuracy                           0.68       333
+   macro avg       0.55      0.64      0.52       333
+weighted avg       0.89      0.68      0.76       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.6846846846846847
+[[212  94]
+ [ 11  16]]
+              precision    recall  f1-score   support
+
+           0       0.95      0.69      0.80       306
+           1       0.15      0.59      0.23        27
+
+    accuracy                           0.68       333
+   macro avg       0.55      0.64      0.52       333
+weighted avg       0.89      0.68      0.76       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.6846846846846847
+[[212  94]
+ [ 11  16]]
+              precision    recall  f1-score   support
+
+           0       0.95      0.69      0.80       306
+           1       0.15      0.59      0.23        27
+
+    accuracy                           0.68       333
+   macro avg       0.55      0.64      0.52       333
+weighted avg       0.89      0.68      0.76       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.6846846846846847
+[[212  94]
+ [ 11  16]]
+              precision    recall  f1-score   support
+
+           0       0.95      0.69      0.80       306
+           1       0.15      0.59      0.23        27
+
+    accuracy                           0.68       333
+   macro avg       0.55      0.64      0.52       333
+weighted avg       0.89      0.68      0.76       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA attempted models
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.5705705705705706
+[[172 138]
+ [  5  18]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.55      0.71       310
+           1       0.12      0.78      0.20        23
+
+    accuracy                           0.57       333
+   macro avg       0.54      0.67      0.45       333
+weighted avg       0.91      0.57      0.67       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.900000 (0.122474)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.5705705705705706
+[[173 137]
+ [  6  17]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.56      0.71       310
+           1       0.11      0.74      0.19        23
+
+    accuracy                           0.57       333
+   macro avg       0.54      0.65      0.45       333
+weighted avg       0.91      0.57      0.67       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.5705705705705706
+[[173 137]
+ [  6  17]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.56      0.71       310
+           1       0.11      0.74      0.19        23
+
+    accuracy                           0.57       333
+   macro avg       0.54      0.65      0.45       333
+weighted avg       0.91      0.57      0.67       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.5705705705705706
+[[173 137]
+ [  6  17]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.56      0.71       310
+           1       0.11      0.74      0.19        23
+
+    accuracy                           0.57       333
+   macro avg       0.54      0.65      0.45       333
+weighted avg       0.91      0.57      0.67       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.5705705705705706
+[[173 137]
+ [  6  17]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.56      0.71       310
+           1       0.11      0.74      0.19        23
+
+    accuracy                           0.57       333
+   macro avg       0.54      0.65      0.45       333
+weighted avg       0.91      0.57      0.67       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA infrastructure/packages
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.5525525525525525
+[[171 143]
+ [  6  13]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.54      0.70       314
+           1       0.08      0.68      0.15        19
+
+    accuracy                           0.55       333
+   macro avg       0.52      0.61      0.42       333
+weighted avg       0.92      0.55      0.67       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.927473 (0.063925)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.5525525525525525
+[[171 143]
+ [  6  13]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.54      0.70       314
+           1       0.08      0.68      0.15        19
+
+    accuracy                           0.55       333
+   macro avg       0.52      0.61      0.42       333
+weighted avg       0.92      0.55      0.67       333
+
+
+Cross Validation Results:
+CART: 0.941067 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.5525525525525525
+[[171 143]
+ [  6  13]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.54      0.70       314
+           1       0.08      0.68      0.15        19
+
+    accuracy                           0.55       333
+   macro avg       0.52      0.61      0.42       333
+weighted avg       0.92      0.55      0.67       333
+
+
+Cross Validation Results:
+KNN: 0.941067 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.5525525525525525
+[[171 143]
+ [  6  13]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.54      0.70       314
+           1       0.08      0.68      0.15        19
+
+    accuracy                           0.55       333
+   macro avg       0.52      0.61      0.42       333
+weighted avg       0.92      0.55      0.67       333
+
+
+Cross Validation Results:
+SVM: 0.941067 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.5495495495495496
+[[170 144]
+ [  6  13]]
+              precision    recall  f1-score   support
+
+           0       0.97      0.54      0.69       314
+           1       0.08      0.68      0.15        19
+
+    accuracy                           0.55       333
+   macro avg       0.52      0.61      0.42       333
+weighted avg       0.92      0.55      0.66       333
+
+
+Cross Validation Results:
+NeuralNet: 0.927473 (0.045229)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA biases/fairness
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.6036036036036037
+[[192 114]
+ [ 18   9]]
+              precision    recall  f1-score   support
+
+           0       0.91      0.63      0.74       306
+           1       0.07      0.33      0.12        27
+
+    accuracy                           0.60       333
+   macro avg       0.49      0.48      0.43       333
+weighted avg       0.85      0.60      0.69       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.950000 (0.100000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.6036036036036037
+[[192 114]
+ [ 18   9]]
+              precision    recall  f1-score   support
+
+           0       0.91      0.63      0.74       306
+           1       0.07      0.33      0.12        27
+
+    accuracy                           0.60       333
+   macro avg       0.49      0.48      0.43       333
+weighted avg       0.85      0.60      0.69       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.6036036036036037
+[[192 114]
+ [ 18   9]]
+              precision    recall  f1-score   support
+
+           0       0.91      0.63      0.74       306
+           1       0.07      0.33      0.12        27
+
+    accuracy                           0.60       333
+   macro avg       0.49      0.48      0.43       333
+weighted avg       0.85      0.60      0.69       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.6036036036036037
+[[192 114]
+ [ 18   9]]
+              precision    recall  f1-score   support
+
+           0       0.91      0.63      0.74       306
+           1       0.07      0.33      0.12        27
+
+    accuracy                           0.60       333
+   macro avg       0.49      0.48      0.43       333
+weighted avg       0.85      0.60      0.69       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.6036036036036037
+[[192 114]
+ [ 18   9]]
+              precision    recall  f1-score   support
+
+           0       0.91      0.63      0.74       306
+           1       0.07      0.33      0.12        27
+
+    accuracy                           0.60       333
+   macro avg       0.49      0.48      0.43       333
+weighted avg       0.85      0.60      0.69       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA model comparison
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.6216216216216216
+[[158 106]
+ [ 20  49]]
+              precision    recall  f1-score   support
+
+           0       0.89      0.60      0.71       264
+           1       0.32      0.71      0.44        69
+
+    accuracy                           0.62       333
+   macro avg       0.60      0.65      0.58       333
+weighted avg       0.77      0.62      0.66       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.924501 (0.033480)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.6246246246246246
+[[159 105]
+ [ 20  49]]
+              precision    recall  f1-score   support
+
+           0       0.89      0.60      0.72       264
+           1       0.32      0.71      0.44        69
+
+    accuracy                           0.62       333
+   macro avg       0.60      0.66      0.58       333
+weighted avg       0.77      0.62      0.66       333
+
+
+Cross Validation Results:
+CART: 0.954545 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.6246246246246246
+[[159 105]
+ [ 20  49]]
+              precision    recall  f1-score   support
+
+           0       0.89      0.60      0.72       264
+           1       0.32      0.71      0.44        69
+
+    accuracy                           0.62       333
+   macro avg       0.60      0.66      0.58       333
+weighted avg       0.77      0.62      0.66       333
+
+
+Cross Validation Results:
+KNN: 0.954394 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.6246246246246246
+[[159 105]
+ [ 20  49]]
+              precision    recall  f1-score   support
+
+           0       0.89      0.60      0.72       264
+           1       0.32      0.71      0.44        69
+
+    accuracy                           0.62       333
+   macro avg       0.60      0.66      0.58       333
+weighted avg       0.77      0.62      0.66       333
+
+
+Cross Validation Results:
+SVM: 0.954545 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.6246246246246246
+[[159 105]
+ [ 20  49]]
+              precision    recall  f1-score   support
+
+           0       0.89      0.60      0.72       264
+           1       0.32      0.71      0.44        69
+
+    accuracy                           0.62       333
+   macro avg       0.60      0.66      0.58       333
+weighted avg       0.77      0.62      0.66       333
+
+
+Cross Validation Results:
+NeuralNet: 0.939886 (0.028990)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA experiment cases
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.6276276276276276
+[[163 113]
+ [ 11  46]]
+              precision    recall  f1-score   support
+
+           0       0.94      0.59      0.72       276
+           1       0.29      0.81      0.43        57
+
+    accuracy                           0.63       333
+   macro avg       0.61      0.70      0.58       333
+weighted avg       0.83      0.63      0.67       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.890345 (0.045871)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.6276276276276276
+[[163 113]
+ [ 11  46]]
+              precision    recall  f1-score   support
+
+           0       0.94      0.59      0.72       276
+           1       0.29      0.81      0.43        57
+
+    accuracy                           0.63       333
+   macro avg       0.61      0.70      0.58       333
+weighted avg       0.83      0.63      0.67       333
+
+
+Cross Validation Results:
+CART: 0.904152 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.6306306306306306
+[[164 112]
+ [ 11  46]]
+              precision    recall  f1-score   support
+
+           0       0.94      0.59      0.73       276
+           1       0.29      0.81      0.43        57
+
+    accuracy                           0.63       333
+   macro avg       0.61      0.70      0.58       333
+weighted avg       0.83      0.63      0.68       333
+
+
+Cross Validation Results:
+KNN: 0.885198 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.6276276276276276
+[[163 113]
+ [ 11  46]]
+              precision    recall  f1-score   support
+
+           0       0.94      0.59      0.72       276
+           1       0.29      0.81      0.43        57
+
+    accuracy                           0.63       333
+   macro avg       0.61      0.70      0.58       333
+weighted avg       0.83      0.63      0.67       333
+
+
+Cross Validation Results:
+SVM: 0.904152 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.6306306306306306
+[[164 112]
+ [ 11  46]]
+              precision    recall  f1-score   support
+
+           0       0.94      0.59      0.73       276
+           1       0.29      0.81      0.43        57
+
+    accuracy                           0.63       333
+   macro avg       0.61      0.70      0.58       333
+weighted avg       0.83      0.63      0.68       333
+
+
+Cross Validation Results:
+NeuralNet: 0.828276 (0.049751)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA results use
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.5735735735735735
+[[162 123]
+ [ 19  29]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.57      0.70       285
+           1       0.19      0.60      0.29        48
+
+    accuracy                           0.57       333
+   macro avg       0.54      0.59      0.49       333
+weighted avg       0.79      0.57      0.64       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.923077 (0.054393)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.5765765765765766
+[[163 122]
+ [ 19  29]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.57      0.70       285
+           1       0.19      0.60      0.29        48
+
+    accuracy                           0.58       333
+   macro avg       0.54      0.59      0.49       333
+weighted avg       0.79      0.58      0.64       333
+
+
+Cross Validation Results:
+CART: 0.930754 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.5765765765765766
+[[163 122]
+ [ 19  29]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.57      0.70       285
+           1       0.19      0.60      0.29        48
+
+    accuracy                           0.58       333
+   macro avg       0.54      0.59      0.49       333
+weighted avg       0.79      0.58      0.64       333
+
+
+Cross Validation Results:
+KNN: 0.920148 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.5765765765765766
+[[163 122]
+ [ 19  29]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.57      0.70       285
+           1       0.19      0.60      0.29        48
+
+    accuracy                           0.58       333
+   macro avg       0.54      0.59      0.49       333
+weighted avg       0.79      0.58      0.64       333
+
+
+Cross Validation Results:
+SVM: 0.930754 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.5765765765765766
+[[162 123]
+ [ 18  30]]
+              precision    recall  f1-score   support
+
+           0       0.90      0.57      0.70       285
+           1       0.20      0.62      0.30        48
+
+    accuracy                           0.58       333
+   macro avg       0.55      0.60      0.50       333
+weighted avg       0.80      0.58      0.64       333
+
+
+Cross Validation Results:
+NeuralNet: 0.876923 (0.056527)
+
+-------------------------------------------------------------
+
+
+
+WORKING WITH CRITERIA results misuse
+
+
+Validation Dataset Testing Results:
+
+NaiveBayes Accuracy: 0.7957957957957958
+[[260  65]
+ [  3   5]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.80      0.88       325
+           1       0.07      0.62      0.13         8
+
+    accuracy                           0.80       333
+   macro avg       0.53      0.71      0.51       333
+weighted avg       0.97      0.80      0.87       333
+
+
+Cross Validation Results:
+NaiveBayes: 0.942857 (0.069985)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+CART Accuracy: 0.8018018018018018
+[[262  63]
+ [  3   5]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.81      0.89       325
+           1       0.07      0.62      0.13         8
+
+    accuracy                           0.80       333
+   macro avg       0.53      0.72      0.51       333
+weighted avg       0.97      0.80      0.87       333
+
+
+Cross Validation Results:
+CART: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+KNN Accuracy: 0.8018018018018018
+[[262  63]
+ [  3   5]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.81      0.89       325
+           1       0.07      0.62      0.13         8
+
+    accuracy                           0.80       333
+   macro avg       0.53      0.72      0.51       333
+weighted avg       0.97      0.80      0.87       333
+
+
+Cross Validation Results:
+KNN: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+SVM Accuracy: 0.8018018018018018
+[[262  63]
+ [  3   5]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.81      0.89       325
+           1       0.07      0.62      0.13         8
+
+    accuracy                           0.80       333
+   macro avg       0.53      0.72      0.51       333
+weighted avg       0.97      0.80      0.87       333
+
+
+Cross Validation Results:
+SVM: 1.000000 (0.000000)
+
+-------------------------------------------------------------
+
+Validation Dataset Testing Results:
+
+NeuralNet Accuracy: 0.8018018018018018
+[[262  63]
+ [  3   5]]
+              precision    recall  f1-score   support
+
+           0       0.99      0.81      0.89       325
+           1       0.07      0.62      0.13         8
+
+    accuracy                           0.80       333
+   macro avg       0.53      0.72      0.51       333
+weighted avg       0.97      0.80      0.87       333
+
+
+Cross Validation Results:
+NeuralNet: 1.000000 (0.000000)
+
+-------------------------------------------------------------
