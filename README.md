@@ -1,6 +1,6 @@
 # DataEthics2022
 
-short sentence describing repo
+The code and labeled data used for the ethically-conscious transparency modeling task.
 
 ### Data
 
